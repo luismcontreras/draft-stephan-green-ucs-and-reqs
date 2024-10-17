@@ -68,7 +68,7 @@ informative:
     date: 2024-07-20
     target: "https://datatracker.ietf.org/meeting/120/materials/slides-120-green-input-from-operators-to-green-bof-01"
 
-  ITU-M3400
+  ITU-M3400:
     title: "International Telecommunication Union, ITU-T Recommendation M.3400, Series M"
     date: 2000-02-01
 
