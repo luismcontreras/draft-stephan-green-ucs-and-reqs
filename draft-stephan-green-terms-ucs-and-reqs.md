@@ -65,17 +65,17 @@ informative:
 
 --- abstract
 
-   This document defines requirements for standards specifications for
-   Energy Management, taking RFC6988 as a starting point. Eleven years after the RFC 6988 publication, this document re-evaluates the requirements. 
-   The requirements defined in this document are concerned with discovery functions, monitoring functions as well as control functions.
-   Discovery functions include identifying energy-managed network, devices and their components, discovery of inventory of power components capabilities, optimization control capabilities, nominal condition use.
-   Monitoring functions include monitoring their Power States, Power Attributes, energy consumption, network performance, energy efficiency metrics. Control functions include such functions as controlling energy saving and optimization functions and Power State of energy-managed devices and their components.
+This document defines requirements for standards specifications for
+Energy Management, taking RFC6988 as a starting point. Eleven years after the RFC 6988 publication, this document re-evaluates the requirements. 
+The requirements defined in this document are concerned with discovery functions, monitoring functions as well as control functions.
+Discovery functions include identifying energy-managed network, devices and their components, discovery of inventory of power components capabilities, optimization control capabilities, nominal condition use.
+Monitoring functions include monitoring their Power States, Power Attributes, energy consumption, network performance, energy efficiency metrics. Control functions include such functions as controlling energy saving and optimization functions and Power State of energy-managed devices and their components.
 
-   This document does not specify the features that must be implemented by compliant implementations but rather lists features that must be supported by standards for Energy efficiency Management.
+This document does not specify the features that must be implemented by compliant implementations but rather lists features that must be supported by standards for Energy efficiency Management.
 
-   Discussion Venues
+Discussion Venues
 
-   Source of this draft and an issue tracker can be found at https://github.com/bclaise/green-ietf 
+Source of this draft and an issue tracker can be found at https://github.com/bclaise/green-ietf 
 
 --- middle
 
@@ -113,7 +113,7 @@ informative:
       * LLDP MIB module and LLDP MED MIB module
 
    Due to limitations regarding Writeable MIB module, one IESG statement published in 2014 encourages the use the NETCONF/YANG standards for configuration. Based on the YANG modules 
-   developments, three MIB  modules (Entity MIB module, Entity Sensor MIB module, Entity State MIB module) have been converted into the "YANG Data Model for Hardware Management" {?RFC8348}}.
+   developments, three MIB  modules (Entity MIB module, Entity Sensor MIB module, Entity State MIB module) have been converted into the "YANG Data Model for Hardware Management" {{?RFC8348}}.
 
    However, Power and Energy Monitoring and Control MIB modules has not been converted yet into YANG modules.
 
@@ -127,7 +127,7 @@ informative:
 
       - A focus towards YANG, and not any longer on MIB modules
 
-      - As a consequence from the previous point, the ENTITY-MIB v4 (RFC6933) is replaced by the Hardware YANG module RFC8348
+      - As a consequence from the previous point, the ENTITY-MIB v4 {{?RFC6933}} is replaced by the Hardware YANG module RFC8348
 
       - No focus on the battery management (as batteries haves some self-optimization features these days)
 
