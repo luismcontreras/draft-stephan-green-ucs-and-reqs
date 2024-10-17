@@ -57,8 +57,7 @@ contributor:
     fullname: Thomas Dietz
     org: NEC Europe Ltd.
     email: Thomas.Dietz@neclab.eu
-	
-	
+
 normative:
 
 informative:
