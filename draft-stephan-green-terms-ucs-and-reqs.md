@@ -1,6 +1,6 @@
 ---
 title: "Requirements for Energy Efficiency Management"
-abbrev: Requirements for Energy Efficiency Management
+abbrev: Requirements for Energy Efficiency
 docname: draft-stephan-green-terms-ucs-and-reqs
 category: info
 stand_alone: true
@@ -121,7 +121,7 @@ informative:
       * {{?RFC1628}}, UPS Power Monitoring MIB module
 
       * LLDP MIB module and LLDP MED MIB module
-   
+
    Due to limitations regarding Writeable MIB module, one IESG statement published in 
    2014 encourages the use the NETCONF/YANG standards for configuration. Based on the YANG modules 
    developments, three MIB  modules (Entity MIB module, Entity Sensor MIB module, Entity State MIB
@@ -134,7 +134,7 @@ informative:
    energy-related requirements, as a preparation for the GREEN BoF at IETF 120. 
 
 ## High-level Differences with RFC6988
-   
+
    The following section will delve into the specific details but from a high level point of view, the differences between this document and the RFC6988 are:
 
       - New definition for "Energy Efficiency Management"
@@ -147,7 +147,7 @@ informative:
 
       - Less focus on the Power over Ethernet management
 
-      - A focus on reporting lifecycle management, considering energy and transformation towards carbon awareness 
+      - A focus on reporting lifecycle management, considering energy and transformation towards carbon awareness
 
 ## Background
 
