@@ -115,9 +115,9 @@ informative:
    Due to limitations regarding Writeable MIB module, one IESG statement published in 2014 encourages the use the NETCONF/YANG standards for configuration. Based on the YANG modules 
    developments, three MIB  modules (Entity MIB module, Entity Sensor MIB module, Entity State MIB module) have been converted into the "YANG Data Model for Hardware Management" {?RFC8348}}.
 
-   However, Power and Energy Monitoring and Control MIB modules has not been converted yet into YANG modules. 
+   However, Power and Energy Monitoring and Control MIB modules has not been converted yet into YANG modules.
 
-   Eleven years after the EMAN requirements RFC 6988 publication, this document re-evaluates the energy-related requirements, as a preparation for the GREEN BoF at IETF 120. 
+   Eleven years after the EMAN requirements RFC 6988 publication, this document re-evaluates the energy-related requirements, as a preparation for the GREEN BoF at IETF 120.
 
 ## High-level Differences with RFC6988
 
@@ -149,9 +149,9 @@ informative:
    Energy efficiency Management functions focus mainly on network devices and
    their built-in components that receive and provide electrical energy.  Devices such
    as switches, routers, servers and storage devices should have an IP address providing a
-   management interface for the network device. Alternatively, energy-related devices (for 
+   management interface for the network device. Alternatively, energy-related devices (for
    example, in building management, which typically don't support IP) might be connected
-   via a proxy/gateway with an IP address. 
+   via a proxy/gateway with an IP address.
 
    These requirements are concerned with the standards specification
    process and not the implementation of specified standards.  All
