@@ -72,7 +72,7 @@ informative:
     title: "International Telecommunication Union, ITU-T Recommendation M.3400, Series M"
     date: 2000-02-01
 
-  IEC.60050: 
+  IEC.60050:
     title: "International Electrotechnical Commission, Electropedia: The World's Online Electrotechnical Vocabulary"
     date: 2013
     target: http://www.electropedia.org/iev/iev.nsf/welcome?openform
@@ -244,15 +244,15 @@ Source of this draft and an issue tracker can be found athttps://github.com/emil
    throughout the document; the exceptions are the well-known terms
    "energy" and "power".  These terms are generic and are used in
    generated terms such as "energy-saving", "low-power", etc.
- 
+
    Embedded carbon (or embodied carbon)
-   
+
       The total amount of greenhouse gas emissions, measured in tonnes
       of CO2 equivalent (tCO2e), associated with the entire lifecycle
       of a product or material, from raw material extraction through
       manufacturing, transportation, use, and end-of-life disposal or
       recycling.
- 
+
    Embodied energy
 
       The total amount of energy consumed in all processes associated
@@ -260,13 +260,13 @@ Source of this draft and an issue tracker can be found athttps://github.com/emil
       extraction and processing of raw materials, through manufacturing,
       transportation, and installation, to the end of its useful life,
       including disposal or recycling.
-  
+
    Energy
 
       Energy is the capacity of a system to do work.  As used by
       electric utilities, it is generally a reference to electrical
       energy and is measured in kilowatt-hours (kWh) [IEEE-100].
-      
+
    Power
 
       Power is the time rate at which energy is emitted, transferred, or
@@ -437,7 +437,7 @@ Source of this draft and an issue tracker can be found athttps://github.com/emil
    o  choosing the time of the next maintenance cycle for an entity
 
 
-   
+
 ## Overview of Energy Management Requirements
 
    The following basic management functions are required:
@@ -454,7 +454,7 @@ Source of this draft and an issue tracker can be found athttps://github.com/emil
 
    In addition, to support energy efficiency management, additional requirements concerned with discovery functions
    and control functions are introduced:
-   
+
    o   discovering energy-managed network, devices and their components
 
    o   discovering inventory of power components together with their capabilities, optimization
