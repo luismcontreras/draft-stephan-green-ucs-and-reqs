@@ -293,7 +293,7 @@ Source of this draft and an issue tracker can be found athttps://github.com/emil
       constraints of the organization [ITU-M3400].
 
    Energy Efficiency Management
-  
+
      Involves deploying and managing network infrastructures with the
      goal of optimizing energy use on network devices while improving
      the overall network utilization.
@@ -306,9 +306,9 @@ Source of this draft and an issue tracker can be found athttps://github.com/emil
 
    Energy Monitoring
 
-      Energy Monitoring is a part of Energy Efficiency Management that deals with
-      collecting or reading information from network elements and their components to aid in
-      Energy Efficiency Management.
+      Energy Monitoring is a part of Energy Efficiency Management that deals
+      with collecting or reading information from network elements and their
+      components to aid in Energy Efficiency Management.
 
    Energy Control
 
@@ -463,7 +463,7 @@ Source of this draft and an issue tracker can be found athttps://github.com/emil
    o  discovering supported power state of each network device within the network
 
    o discovering power relationship between component within network device and across network devices.
-  
+
    o  support additional energy efficiency metrics for energy efficiency monitoring, e.g., heat consumption, energy
        efficiency ratio, maximum wake up time, etc.
 
@@ -1067,7 +1067,7 @@ Source of this draft and an issue tracker can be found athttps://github.com/emil
   optimization functionalities and allocating the committed component resource
   (e.g., adjust fan speed, shutdown high speed interface) or committed device
   resource (e.g., multiple cards scheduling, multiple power module scheduling).
-  
+
   In addition, the standard must provide means to support both local management and
   network wide management based on energy saving functionality.
 
