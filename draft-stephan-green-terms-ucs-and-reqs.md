@@ -68,7 +68,7 @@ informative:
     date: 2024-07-20
     target: "https://datatracker.ietf.org/meeting/120/materials/slides-120-green-input-from-operators-to-green-bof-01"
 
-  ITU-M.3400:
+  ITU-M3400:
     title: "International Telecommunication Union, ITU-T Recommendation M.3400, Series M"
     date: 2000-02-01
 
@@ -290,7 +290,7 @@ Source of this draft and an issue tracker can be found at https://github.com/bcl
       planning, and optimizing networks to ensure that the network
       elements and attached devices use energy efficiently and in a
       manner appropriate to the nature of the application and the cost
-      constraints of the organization [ITU-M.3400].
+      constraints of the organization [ITU-M3400].
 
    Energy Efficiency Management
    
