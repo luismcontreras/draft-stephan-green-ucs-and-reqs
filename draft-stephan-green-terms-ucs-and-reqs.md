@@ -1,16 +1,25 @@
 ---
-title: "Requirements for Energy Efficiency Management, 11 years after the EMAN RFC6988"
+title: "Requirements for Energy Efficiency Management"
 abbrev: Requirements for Energy Efficiency Management
-docname: draft-eman-green-rfc6988bis-01
+docname: draft-stephan-green-terms-ucs-and-reqs
 category: info
 
-stand_alone: true
-submissiontype: IETF  
-area: "Operations and Management"
-wg: green
-
+submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 consensus: true
-v: 0
+
+area: "Operations and Management"
+workgroup: "Getting Ready for Energy-Efficient Networking"
+keyword: Sustainability, Ressources
+
+venue:
+  group: "Getting Ready for Energy-Efficient Networking"
+  type: "Working Group"
+  mail: "green@ietf.org"
+  arch: "https://mailarchive.ietf.org/arch/browse/green-bof/"
+  github: "emile22/draft-stephan-green-terms-ucs-and-reqs"
+  latest: "https://emile22.github.io/draft-stephan-green-terms-ucs-and-reqs/draft-stephan-green-terms-ucs-and-reqs.html"
+
+v: 3
 
 author:
   -
