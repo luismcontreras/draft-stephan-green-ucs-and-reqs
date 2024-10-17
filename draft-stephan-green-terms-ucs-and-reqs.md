@@ -3,6 +3,7 @@ title: "Requirements for Energy Efficiency Management"
 abbrev: Requirements for Energy Efficiency Management
 docname: draft-stephan-green-terms-ucs-and-reqs
 category: info
+stand_alone: true
 
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 consensus: true
