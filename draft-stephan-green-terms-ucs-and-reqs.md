@@ -76,7 +76,7 @@ informative:
 --- abstract
 
 This document defines requirements for standards specifications for
-Energy Management, taking RFC6988 as a starting point. Eleven years after the RFC 6988 publication, this document re-evaluates the requirements. 
+Energy Management, taking RFC6988 as a starting point. Eleven years after the RFC 6988 publication, this document re-evaluates the requirements.
 The requirements defined in this document are concerned with discovery functions, monitoring functions as well as control functions.
 Discovery functions include identifying energy-managed network, devices and their components, discovery of inventory of power components capabilities, optimization control capabilities, nominal condition use.
 Monitoring functions include monitoring their Power States, Power Attributes, energy consumption, network performance, energy efficiency metrics. Control functions include such functions as controlling energy saving and optimization functions and Power State of energy-managed devices and their components.
@@ -85,12 +85,9 @@ This document does not specify the features that must be implemented by complian
 
 Discussion Venues
 
-Source of this draft and an issue tracker can be found at https://github.com/bclaise/green-ietf 
+Source of this draft and an issue tracker can be found athttps://github.com/emile22/draft-stephan-green-terms-ucs-and-reqs
 
 --- middle
-
-
-
 
 # Introduction
 
@@ -122,8 +119,7 @@ Source of this draft and an issue tracker can be found at https://github.com/bcl
 
       * LLDP MIB module and LLDP MED MIB module
 
-   Due to limitations regarding Writeable MIB module, one IESG statement published in 2014 encourages the use the NETCONF/YANG standards for configuration. Based on the YANG modules 
-   developments, three MIB  modules (Entity MIB module, Entity Sensor MIB module, Entity State MIB module) have been converted into the "YANG Data Model for Hardware Management" {{?RFC8348}}.
+   Due to limitations regarding Writeable MIB module, one IESG statement published in 2014 encourages the use the NETCONF/YANG standards for configuration. Based on the YANG modules    developments, three MIB  modules (Entity MIB module, Entity Sensor MIB module, Entity State MIB module) have been converted into the "YANG Data Model for Hardware Management" {{?FC8348}}.
 
    However, Power and Energy Monitoring and Control MIB modules has not been converted yet into YANG modules.
 
@@ -217,9 +213,9 @@ Source of this draft and an issue tracker can be found at https://github.com/bcl
       power line into the entity.  A Power Distribution Unit (PDU) and a
       Power over Ethernet (PoE) switch are common examples.  Both supply
       power to other entities at sockets or ports, respectively, and are
-      often instrumented to measure power per socket or port. Also it 
-      could be considered to obtain power values for the entity via 
-      communication with other entities outside of the power distribution 
+      often instrumented to measure power per socket or port. Also it
+      could be considered to obtain power values for the entity via
+      communication with other entities outside of the power distribution
       tree, like for example external databases or even data sheets.
 
    o  Similar considerations apply to controlling the power supply of an
@@ -247,20 +243,20 @@ Source of this draft and an issue tracker can be found at https://github.com/bcl
  
    Embedded carbon (or embodied carbon)
    
-      The total amount of greenhouse gas emissions, measured in tonnes 
-      of CO2 equivalent (tCO2e), associated with the entire lifecycle 
-      of a product or material, from raw material extraction through 
-      manufacturing, transportation, use, and end-of-life disposal or 
+      The total amount of greenhouse gas emissions, measured in tonnes
+      of CO2 equivalent (tCO2e), associated with the entire lifecycle
+      of a product or material, from raw material extraction through
+      manufacturing, transportation, use, and end-of-life disposal or
       recycling.
  
    Embodied energy
 
-      The total amount of energy consumed in all processes associated 
-      with the production of a building material or product, from the 
-      extraction and processing of raw materials, through manufacturing, 
-      transportation, and installation, to the end of its useful life, 
+      The total amount of energy consumed in all processes associated
+      with the production of a building material or product, from the
+      extraction and processing of raw materials, through manufacturing,
+      transportation, and installation, to the end of its useful life,
       including disposal or recycling.
-       
+  
    Energy
 
       Energy is the capacity of a system to do work.  As used by
@@ -342,7 +338,7 @@ Source of this draft and an issue tracker can be found at https://github.com/bcl
 
    The basic objective of Energy Efficiency Management is to operate sets of
    network devices using minimal energy, while maintaining a certain level of
-   service. 
+   service.
 
 ## Power States
 
@@ -365,13 +361,13 @@ Source of this draft and an issue tracker can be found at https://github.com/bcl
    systems are highly sought after, for environmental, business, and technical reasons.
    Examples are various operational low Power States in which a network device requires less energy than in the full
    power "on" state, but -- compared to the sleep state -- is still
-   operational with reduced performance or functionality. 
-   
+   operational with reduced performance or functionality.
+
    Another example is standby power state
    in which network device has multiple standby components and one active component for the same functionality,
    standby components are partially functional and can be immediately available when active component is down.
    The standby power state can be introduced to save energy while impove the overall network utilization.
-   
+
 ## Saving Energy versus Maintaining Service Level
 
    One of the objectives of Energy Efficiency Management is to reduce energy
@@ -470,7 +466,7 @@ Source of this draft and an issue tracker can be found at https://github.com/bcl
    o  support separation of desired power state and actual power state and optimize energy usage to allow update actual
        power state to match desired power state.
 
-  o  Introduce energy saving method, and energy efficiency metrics to support explicit power control or energy 
+  o  Introduce energy saving method, and energy efficiency metrics to support explicit power control or energy
       efficiency optimization and control.
 
   o  allow control and optimize energy usage to make the trade-off between network performance and power
@@ -502,9 +498,9 @@ Source of this draft and an issue tracker can be found at https://github.com/bcl
    night.
 
    Identifiers for network, network devices and components are already defined in
-   standard YANG modules Network Topology YANG module {{?RFC8345}} and Hardware YANG 
-   module {{?RFC8348}}. Note that Network Topology YANG module {{?RFC8345}} identifiers 
-   are reused in the Network Inventory YANG module  {{?I-D.ietf-ivy-network-inventory-yang}} 
+   standard YANG modules Network Topology YANG module {{?RFC8345}} and Hardware YANG
+   module {{?RFC8348}}. Note that Network Topology YANG module {{?RFC8345}} identifiers
+   are reused in the Network Inventory YANG module  {{?I-D.ietf-ivy-network-inventory-yang}}
    and are also the basis for the Digital Map Modeling efforts in the NMOP Working Group.
 
    Instrumentation for measuring the received and provided energy of a
@@ -521,10 +517,10 @@ Source of this draft and an issue tracker can be found at https://github.com/bcl
 
 ## Identifying Entitiy Capabilities
 
-   The standard must provide means for discovering inventory of power components 
-   together with their capabilities, optimization control capabilities, nominal 
-   condition use. In addition, The standard must provide means for discovering 
-   supported power state of each network device within the network and power 
+   The standard must provide means for discovering inventory of power components
+   together with their capabilities, optimization control capabilities, nominal
+   condition use. In addition, The standard must provide means for discovering
+   supported power state of each network device within the network and power
    relationship between component within network device and across network devices.
 
 ## Persistence of Identifiers
@@ -899,20 +895,19 @@ Source of this draft and an issue tracker can be found at https://github.com/bcl
   [ITUT-L.1310], [ATIS-0600015.03.2013] provide methodology and test
   procedure for measuring such energy efficiency related metrics, which
   is defined as the throughput forwarded by 1 watt. The traffic loads and
-  the weighted multipliers need to be clearly established in advance. 
+  the weighted multipliers need to be clearly established in advance.
 
-  Note that, based on the specific optimization policy (throughput, heat, 
-  energy source, etc.), different derived metrics should be computed at 
+  Note that, based on the specific optimization policy (throughput, heat,
+  energy source, etc.), different derived metrics should be computed at
   the controller level.
 
-
 ### Power Gain Measurement
- 
+
   The standard must provide means for measuring power gain, which can
   be calculated by actual power to be consumed by the entity divided by the maximum
-  power of the entity. In addition, the minimum power gain can also be 
+  power of the entity. In addition, the minimum power gain can also be
   measured and reported.
- 
+
 ### Time Intervals
 
    The standard must provide means for reporting the time interval for
@@ -923,7 +918,7 @@ Source of this draft and an issue tracker can be found at https://github.com/bcl
    The standard must provide means for reporting the received and
    provided energy for each individual Power State.  This extends the
    requirements on Power State statistics described in Section 5.4.7.
-   
+
 ## Obsolete Battery State from RFC6988
 
    Batteries are built in component within a network device and have no
@@ -1130,7 +1125,7 @@ Source of this draft and an issue tracker can be found at https://github.com/bcl
    RFC6988 allow some entities have control over Power States of other entities,
    e.g., in Building automation case where a gateway to a building system may have
    the means to control the Power State of entities in the building that do not have
-   an IP interface. 
+   an IP interface.
 
    In this document, we assume all network devices have IP connectivity in the operator
    controlled environment. Therefore only an Energy Management System has control over
