@@ -62,6 +62,13 @@ normative:
 
 informative:
 
+ITU-M.3400
+   International Telecommunication Union, "ITU-T
+   Recommendation M.3400 -- Series M: TMN and Network Maintenance:
+   International Transmission Systems, Telephone Circuits, Telegraphy,
+   Facsimile and Leased Circuits -- Telecommunications Management
+   Network - TMN management functions", February 2000.
+
 
 --- abstract
 
@@ -1366,8 +1373,4 @@ Source of this draft and an issue tracker can be found at https://github.com/bcl
    The World's Online Electrotechnical Vocabulary", 2013,
    <http://www.electropedia.org/iev/iev.nsf/ welcome?openform>.
 
-   [ITU-M.3400] International Telecommunication Union, "ITU-T
-   Recommendation M.3400 -- Series M: TMN and Network Maintenance:
-   International Transmission Systems, Telephone Circuits, Telegraphy,
-   Facsimile and Leased Circuits -- Telecommunications Management
-   Network - TMN management functions", February 2000.
+
