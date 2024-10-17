@@ -293,7 +293,7 @@ Source of this draft and an issue tracker can be found athttps://github.com/emil
       constraints of the organization [ITU-M3400].
 
    Energy Efficiency Management
-   
+  
      Involves deploying and managing network infrastructures with the
      goal of optimizing energy use on network devices while improving
      the overall network utilization.
@@ -463,7 +463,7 @@ Source of this draft and an issue tracker can be found athttps://github.com/emil
    o  discovering supported power state of each network device within the network
 
    o discovering power relationship between component within network device and across network devices.
-   
+  
    o  support additional energy efficiency metrics for energy efficiency monitoring, e.g., heat consumption, energy
        efficiency ratio, maximum wake up time, etc.
 
@@ -931,7 +931,7 @@ Source of this draft and an issue tracker can be found athttps://github.com/emil
    network management systems separately.
 
    This document proposes to obsolete battery state from RFC6988.
-   
+
 ## Time Series of Measured Values
 
    For some network management tasks, obtaining time series of measured
@@ -1004,31 +1004,30 @@ Source of this draft and an issue tracker can be found athttps://github.com/emil
 
 # Reporting on Lifecycle Management
 
-   Lifecycle information related to manufacturing energy costs, transport, 
-   recyclability, and end-of-life disposal impacts is part of what is 
-   called "embedded carbon." This information is considered to be an 
-   estimated value, which might not be implemented today in the network 
-   devices. It might be part of the vendor information, and to be collected 
-   from datasheets or databases. In accordance with ISO 14040/44, this 
-   information should be considered as part of the sustainable strategy 
-   related to energy efficiency. Also, refer to the ecodesign framework 
+   Lifecycle information related to manufacturing energy costs, transport,
+   recyclability, and end-of-life disposal impacts is part of what is
+   called "embedded carbon." This information is considered to be an
+   estimated value, which might not be implemented today in the network
+   devices. It might be part of the vendor information, and to be collected
+   from datasheets or databases. In accordance with ISO 14040/44, this
+   information should be considered as part of the sustainable strategy
+   related to energy efficiency. Also, refer to the ecodesign framework
    [(EU) 2024/1781] published in June by the European Commission.
 
 ## Carbon Reporting
 
-   To report on carbon equivalents for global reporting, it is important 
-   to correlate the location where the specific entity/network element 
-   is operating with the corresponding carbon factor. Refer to the world 
-   emission factor from the International Energy Agency (IEA), electricity 
-   maps applications that reflect the carbon intensity of the electricity 
+   To report on carbon equivalents for global reporting, it is important
+   to correlate the location where the specific entity/network element
+   is operating with the corresponding carbon factor. Refer to the world
+   emission factor from the International Energy Agency (IEA), electricity
+   maps applications that reflect the carbon intensity of the electricity
    consumed, etc.
 
 ## Energy Mix
 
-   To facilitate carbon reporting for global reporting, it is important to 
-   know the type of energy that network devices are consuming, such as 
+   To facilitate carbon reporting for global reporting, it is important to
+   know the type of energy that network devices are consuming, such as
    solar energy, wind energy, cogeneration, etc.
-   
 
 # Control of Entities
 
@@ -1052,11 +1051,11 @@ Source of this draft and an issue tracker can be found athttps://github.com/emil
    When an Energy Object is set to a particular Power State, the
    represented device or component may be busy.  The Energy Object
    should set the desired Power State and then update the actual Power
-   State when the device or component changes. The standard must 
+   State when the device or component changes. The standard must
    provide means to report the intented and applied Power States,
    with the Network Management Datastore Architecture (NMDA) {{?RFC8342}}
 
-## Controlling Power SupplyProvisioning 
+## Controlling Power SupplyProvisioning
 
    The standard must provide means for switching a power supply off or
    turning a power supply on at Power Interfaces providing power to one
@@ -1252,27 +1251,26 @@ Source of this draft and an issue tracker can be found athttps://github.com/emil
 
    o Do we need to keep a reference to the MIB object entPhysicalUUID (in section 4.4 from ENTITY-MIB v4) in case of legacy device (MIB)?
 
-   o The EMAN requirements and EMAN framework had a lot of emphasis on the "Reporting on Other Entities", typically smart PDU or PoE. 
+   o The EMAN requirements and EMAN framework had a lot of emphasis on the "Reporting on Other Entities", typically smart PDU or PoE.
    Is this important? Should this be removed? Should it be addressed in a future charter?
    This is text about "Sections 7 and 8 contain requirements specific to Energy Management. Due to the nature of power supply, some monitoring and control functions are not conducted by interacting with the entity of interest but rather with other entities, for example, entities upstream in a power distribution tree."
 
-   Expressed differently: Out of scope for the short term approach of EMAN framework enhancements, but might be good to call it out, EMAN 
-   doesn't include mechanisms for integrating occupancy sensors or user behavior analytics, which can be critical for optimizing HVAC, l
-   ighting, and other systems for energy efficiency. This is a key aspect for Smart Buildings and Data Centers energy efficiency metrics. 
+   Expressed differently: Out of scope for the short term approach of EMAN framework enhancements, but might be good to call it out, EMAN
+   doesn't include mechanisms for integrating occupancy sensors or user behavior analytics, which can be critical for optimizing HVAC, lighting, and other systems for energy efficiency. This is a key aspect for Smart Buildings and Data Centers energy efficiency metrics.
 
    o It's not clear whether we need new Power State (Set)? Maybe not but we need to explain the mapping of existing energy efficient features to specific Power States.
 
-   o basic (scalar) units are not enough to describe Power Data Unit capabilities and/or output. We need a more complex structure (which might already exist?) 
-   to cover and combine meanings (that I copied from the chats) like CO2 footprint, clean energy, mix, renewable. as an example, this should help to describe 
+   o basic (scalar) units are not enough to describe Power Data Unit capabilities and/or output. We need a more complex structure (which might already exist?)
+   to cover and combine meanings (that I copied from the chats) like CO2 footprint, clean energy, mix, renewable. as an example, this should help to describe
    reduction of energy consumption and the increase of renewable energy consumption
 
-   o Enhance EMAN framework, to support a more robust and comprehensive 
-   Energy Efficiency Strategy. Let devices report whatever they can using 
-   existing interfaces, without waiting until they implement new capabilities 
-   determined by new or existing standards. Including the capability to 
-   integrate with external data sources (for example, for devices that don't 
-   have the capability or reporting any energy-related metrics) such as vendor 
-   datasheets that provide energy consumption. Use case => upgrading a device 
+   o Enhance EMAN framework, to support a more robust and comprehensive
+   Energy Efficiency Strategy. Let devices report whatever they can using
+   existing interfaces, without waiting until they implement new capabilities
+   determined by new or existing standards. Including the capability to
+   integrate with external data sources (for example, for devices that don't
+   have the capability or reporting any energy-related metrics) such as vendor
+   datasheets that provide energy consumption. Use case => upgrading a device
    for better Energy Efficiency Management. Not sure whether framework-related
    requirements should be covered here.
 
