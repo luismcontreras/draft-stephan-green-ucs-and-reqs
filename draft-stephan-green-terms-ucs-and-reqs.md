@@ -72,6 +72,10 @@ informative:
     title: "International Telecommunication Union, ITU-T Recommendation M.3400, Series M"
     date: 2000-02-01
 
+  IEC.60050: 
+    title: "International Electrotechnical Commission, Electropedia: The World's Online Electrotechnical Vocabulary"
+    date: 2013
+    target: http://www.electropedia.org/iev/iev.nsf/welcome?openform
 
 --- abstract
 
@@ -119,7 +123,7 @@ Source of this draft and an issue tracker can be found athttps://github.com/emil
 
       * LLDP MIB module and LLDP MED MIB module
 
-   Due to limitations regarding Writeable MIB module, one IESG statement published in 2014 encourages the use the NETCONF/YANG standards for configuration. Based on the YANG modules    developments, three MIB  modules (Entity MIB module, Entity Sensor MIB module, Entity State MIB module) have been converted into the "YANG Data Model for Hardware Management" {{?FC8348}}.
+   Due to limitations regarding Writeable MIB module, one IESG statement published in 2014 encourages the use the NETCONF/YANG standards for configuration. Based on the YANG modules    developments, three MIB  modules (Entity MIB module, Entity Sensor MIB module, Entity State MIB module) have been converted into the "YANG Data Model for Hardware Management" {{?RFC8348}}.
 
    However, Power and Energy Monitoring and Control MIB modules has not been converted yet into YANG modules.
 
@@ -1236,46 +1240,30 @@ Source of this draft and an issue tracker can be found athttps://github.com/emil
    Resnick, Sean Turner, Stewart Bryant, and Ralph Droms for their IESG
    reviews.  Finally, special thanks to the document shepherd, Nevil
    Brownlee, and to the EMAN working group chairs: Nevil Brownlee and
-   Bruce Nordman. 
-   
+   Bruce Nordman.
 
 # Open Issues to be Discussed at the BoF
 
    o EMAN "eco system" includes many MIBs. Which one are largely deployed?
-   Will they/How can they benefit of the GREEN works ?
+   Will they/How can they benefit of the GREEN works?
 
-   o Battery use cases migh be different 10 years after. Should it be 
-   addressed in a future charter? So far the decision is no. Nevertheless 
+   o Battery use cases migh be different 10 years after. Should it be addressed in a future charter? So far the decision is no. Nevertheless
    it might be generalized to cover backup sources of energy capabilities and use.
 
-   o Do we need to keep a reference to the MIB object entPhysicalUUID 
-   (in section 4.4 from ENTITY-MIB v4) in case of legacy device (MIB)? 
+   o Do we need to keep a reference to the MIB object entPhysicalUUID (in section 4.4 from ENTITY-MIB v4) in case of legacy device (MIB)?
 
-   o The EMAN requirements and EMAN framework had a lot of emphasis on t
-   he "Reporting on Other Entities", typically smart PDU or PoE. 
-   Is this important? Should this be removed? Should it be addressed 
-   in a future charter?
-   This is text about "Sections 7 and 8 contain requirements specific 
-   to Energy Management. Due to the nature of power supply, some 
-   monitoring and control functions are not conducted by interacting 
-   with the entity of interest but rather with other entities, for 
-   example, entities upstream in a power distribution tree."
+   o The EMAN requirements and EMAN framework had a lot of emphasis on the "Reporting on Other Entities", typically smart PDU or PoE. 
+   Is this important? Should this be removed? Should it be addressed in a future charter?
+   This is text about "Sections 7 and 8 contain requirements specific to Energy Management. Due to the nature of power supply, some monitoring and control functions are not conducted by interacting with the entity of interest but rather with other entities, for example, entities upstream in a power distribution tree."
 
-   Expressed differently: Out of scope for the short term approach of 
-   EMAN framework enhancements, but might be good to call it out, EMAN 
-   doesn't include mechanisms for integrating occupancy sensors or user 
-   behavior analytics, which can be critical for optimizing HVAC, l
-   ighting, and other systems for energy efficiency. This is a key 
-   aspect for Smart Buildings and Data Centers energy efficiency metrics. 
+   Expressed differently: Out of scope for the short term approach of EMAN framework enhancements, but might be good to call it out, EMAN 
+   doesn't include mechanisms for integrating occupancy sensors or user behavior analytics, which can be critical for optimizing HVAC, l
+   ighting, and other systems for energy efficiency. This is a key aspect for Smart Buildings and Data Centers energy efficiency metrics. 
 
-   o It's not clear whether we need new Power State (Set)? Maybe not but 
-   we need to explain the mapping of existing energy efficient features to 
-   specific Power States.
+   o It's not clear whether we need new Power State (Set)? Maybe not but we need to explain the mapping of existing energy efficient features to specific Power States.
 
-   o basic (scalar) units are not enough to describe Power Data Unit capabilities 
-   and/or output. We need a more complex structure (which might already exist?) 
-   to cover and combine meanings (that I copied from the chats) like CO2 footprint, 
-   clean energy, mix, renewable. as an example, this should help to describe 
+   o basic (scalar) units are not enough to describe Power Data Unit capabilities and/or output. We need a more complex structure (which might already exist?) 
+   to cover and combine meanings (that I copied from the chats) like CO2 footprint, clean energy, mix, renewable. as an example, this should help to describe 
    reduction of energy consumption and the increase of renewable energy consumption
 
    o Enhance EMAN framework, to support a more robust and comprehensive 
@@ -1285,10 +1273,10 @@ Source of this draft and an issue tracker can be found athttps://github.com/emil
    integrate with external data sources (for example, for devices that don't 
    have the capability or reporting any energy-related metrics) such as vendor 
    datasheets that provide energy consumption. Use case => upgrading a device 
-   for better Energy Efficiency Management. Not sure whether framework-related 
-   requirements should be covered here. 
+   for better Energy Efficiency Management. Not sure whether framework-related
+   requirements should be covered here.
 
-   o Leveraging existing devices modularity to introduce eco-designed components 
+   o Leveraging existing devices modularity to introduce eco-designed components
    in the networks while being able to assess the gains in sustainability.
    https://datatracker.ietf.org/doc/html/draft-stephan-legacy-path-eco-design-01
    https://github.com/emile22/sustainability
@@ -1300,12 +1288,12 @@ Source of this draft and an issue tracker can be found athttps://github.com/emil
    sources of the energy used (mix). It should be flexible are the types of sources
    might augment in the future.
 
-   o Company's SBTi approved decarbonization plan and how to link it to 
+   o Company's SBTi approved decarbonization plan and how to link it to
    GREEN WG scope, short/mid vs long term.
 
-   The Science Based Targets initiative(SBTi)[https://sciencebasedtargets.org] 
-   defines and promotes best practice in science-based target setting. Offering 
-   a range of target-setting resources and guidance, the SBTi independently 
+   The Science Based Targets initiative(SBTi)[https://sciencebasedtargets.org]
+   defines and promotes best practice in science-based target setting. Offering
+   a range of target-setting resources and guidance, the SBTi independently
    assesses and approves companies’ targets in line with its strict criteria.
 
    Open issue, https://github.com/marisolpalmero/GREEN-bof/issues/88
@@ -1365,10 +1353,5 @@ Source of this draft and an issue tracker can be found athttps://github.com/emil
               methods for telecommunication equipment", 2020,
               <https://www.itu.int/rec/T-REC-L.1310/en>.
 
-## Informative References
-
-   [IEC.60050] International Electrotechnical Commission, "Electropedia:
-   The World's Online Electrotechnical Vocabulary", 2013,
-   <http://www.electropedia.org/iev/iev.nsf/ welcome?openform>.
 
 
