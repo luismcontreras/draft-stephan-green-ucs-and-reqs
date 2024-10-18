@@ -40,24 +40,6 @@ author:
     org: Orange
     email: emile.stephan@orange.com
 
-contributor:
-  -
-    fullname: Jurgen Quittek
-    org: NEC Europe Ltd.
-    email: quittek@neclab.eu
-  -
-    fullname: Mouli Chandramouli
-    org: Cisco Systems, Inc.
-    email: moulchan@cisco.com
-  -
-    fullname: Rolf Winter
-    org: NEC Europe Ltd.
-    email: Rolf.Winter@neclab.eu
-  -
-    fullname: Thomas Dietz
-    org: NEC Europe Ltd.
-    email: Thomas.Dietz@neclab.eu
-
 normative:
 
 informative:
