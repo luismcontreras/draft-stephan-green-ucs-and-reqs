@@ -1130,7 +1130,8 @@ There are limited to energy consumption vs sustainability
 |Control& Mgmt Switch off | Stop and restart WiFi APs with the right time, space, and service granularity | Save power consumption during periods when APs are not in use.| 2|
 
 ## Framework Discussed During the BoF
-The overall framework is shown in {{green-framework}}. 
+
+The overall framework is shown in {{green-framework}}.
 
 ~~~~
 
