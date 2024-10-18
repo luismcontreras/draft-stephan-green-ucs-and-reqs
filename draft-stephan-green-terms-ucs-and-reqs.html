@@ -11,14 +11,16 @@
 <meta content="Qin Wu" name="author">
 <meta content="Luis M. Contreras" name="author">
 <meta content="
-       This document defines requirements for standards specifications for
-Energy Management, taking RFC6988 as a starting point. Eleven years after the RFC 6988 publication, this document re-evaluates the requirements.
-The requirements defined in this document are concerned with discovery functions, monitoring functions as well as control functions.
-Discovery functions include identifying energy-managed network, devices and their components, discovery of inventory of power components capabilities, optimization control capabilities, nominal condition use.
-Monitoring functions include monitoring their Power States, Power Attributes, energy consumption, network performance, energy efficiency metrics. Control functions include such functions as controlling energy saving and optimization functions and Power State of energy-managed devices and their components. 
-       This document does not specify the features that must be implemented by compliant implementations but rather lists features that must be supported by standards for Energy efficiency Management. 
+       This document delineates the requirements for standards specifications in Energy Efficiency Management, extending the foundational work of RFC6988 and incorporating recent insights from operator requirements and the GREEN BoF discussions. Eleven years after the publication of RFC6988, this document reassesses and updates the requirements to align with contemporary needs. 
+       The primary objectives of this draft, which are listed in the goals and scope with the creation of the GREEN WG charter, is focusing on two main targets:
+(1) collecting and updating requirements for the management of energy-efficient networks, and
+(2) defining use cases for managing energy-efficient networks. 
+       Requirements are segmented into three core functions: discovery, monitoring, and control. Discovery functions involve identifying energy-managed networks, devices, and their components, as well as discovering the inventory of power components capabilities, optimization control capabilities, and nominal condition use. Monitoring functions encompass tracking power states, power attributes, energy consumption, network performance, and energy efficiency metrics. Control functions include managing energy-saving and optimization functions and the power states of energy-managed devices and their components. 
+       This document does not mandate specific use cases for compliant implementations but rather lists a few use cases that must be supported by standards for Energy Efficiency Management. 
+       Terms and definitions related to energy efficiency metrics will be discussed in later stages for potential integration. 
+       This draft merges two drafts: (draft-eman-green-rfc6988bis-01)[https://datatracker.ietf.org/doc/draft-eman-green-rfc6988bis/] and (draft-stephan-green-bof-reqs-collections-02)[https://datatracker.ietf.org/doc/draft-stephan-green-bof-reqs-collections/] 
        Discussion Venues 
-       Source of this draft and an issue tracker can be found athttps://github.com/emile22/draft-stephan-green-terms-ucs-and-reqs 
+       Source of this draft and an issue tracker can be found at https://github.com/emile22/draft-stephan-green-terms-ucs-and-reqs 
     " name="description">
 <meta content="xml2rfc 3.23.2" name="generator">
 <meta content="Sustainability, Ressources" name="keyword">
@@ -1086,14 +1088,16 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <h1 id="title">Requirements for Energy Efficiency Management</h1>
 <section id="section-abstract">
       <h2 id="abstract"><a href="#abstract" class="selfRef">Abstract</a></h2>
-<p id="section-abstract-1">This document defines requirements for standards specifications for
-Energy Management, taking RFC6988 as a starting point. Eleven years after the RFC 6988 publication, this document re-evaluates the requirements.
-The requirements defined in this document are concerned with discovery functions, monitoring functions as well as control functions.
-Discovery functions include identifying energy-managed network, devices and their components, discovery of inventory of power components capabilities, optimization control capabilities, nominal condition use.
-Monitoring functions include monitoring their Power States, Power Attributes, energy consumption, network performance, energy efficiency metrics. Control functions include such functions as controlling energy saving and optimization functions and Power State of energy-managed devices and their components.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
-<p id="section-abstract-2">This document does not specify the features that must be implemented by compliant implementations but rather lists features that must be supported by standards for Energy efficiency Management.<a href="#section-abstract-2" class="pilcrow">¶</a></p>
-<p id="section-abstract-3">Discussion Venues<a href="#section-abstract-3" class="pilcrow">¶</a></p>
-<p id="section-abstract-4">Source of this draft and an issue tracker can be found athttps://github.com/emile22/draft-stephan-green-terms-ucs-and-reqs<a href="#section-abstract-4" class="pilcrow">¶</a></p>
+<p id="section-abstract-1">This document delineates the requirements for standards specifications in Energy Efficiency Management, extending the foundational work of RFC6988 and incorporating recent insights from operator requirements and the GREEN BoF discussions. Eleven years after the publication of RFC6988, this document reassesses and updates the requirements to align with contemporary needs.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
+<p id="section-abstract-2">The primary objectives of this draft, which are listed in the goals and scope with the creation of the GREEN WG charter, is focusing on two main targets:
+(1) collecting and updating requirements for the management of energy-efficient networks, and
+(2) defining use cases for managing energy-efficient networks.<a href="#section-abstract-2" class="pilcrow">¶</a></p>
+<p id="section-abstract-3">Requirements are segmented into three core functions: discovery, monitoring, and control. Discovery functions involve identifying energy-managed networks, devices, and their components, as well as discovering the inventory of power components capabilities, optimization control capabilities, and nominal condition use. Monitoring functions encompass tracking power states, power attributes, energy consumption, network performance, and energy efficiency metrics. Control functions include managing energy-saving and optimization functions and the power states of energy-managed devices and their components.<a href="#section-abstract-3" class="pilcrow">¶</a></p>
+<p id="section-abstract-4">This document does not mandate specific use cases for compliant implementations but rather lists a few use cases that must be supported by standards for Energy Efficiency Management.<a href="#section-abstract-4" class="pilcrow">¶</a></p>
+<p id="section-abstract-5">Terms and definitions related to energy efficiency metrics will be discussed in later stages for potential integration.<a href="#section-abstract-5" class="pilcrow">¶</a></p>
+<p id="section-abstract-6">This draft merges two drafts: (draft-eman-green-rfc6988bis-01)[https://datatracker.ietf.org/doc/draft-eman-green-rfc6988bis/] and (draft-stephan-green-bof-reqs-collections-02)[https://datatracker.ietf.org/doc/draft-stephan-green-bof-reqs-collections/]<a href="#section-abstract-6" class="pilcrow">¶</a></p>
+<p id="section-abstract-7">Discussion Venues<a href="#section-abstract-7" class="pilcrow">¶</a></p>
+<p id="section-abstract-8">Source of this draft and an issue tracker can be found at https://github.com/emile22/draft-stephan-green-terms-ucs-and-reqs<a href="#section-abstract-8" class="pilcrow">¶</a></p>
 </section>
 <section class="note rfcEditorRemove" id="section-note.1">
       <h2 id="name-about-this-document">
