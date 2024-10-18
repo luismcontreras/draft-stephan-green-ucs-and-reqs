@@ -40,24 +40,6 @@ author:
     org: Orange
     email: emile.stephan@orange.com
 
-contributor:
-  -
-    fullname: Jurgen Quittek
-    org: NEC Europe Ltd.
-    email: quittek@neclab.eu
-  -
-    fullname: Mouli Chandramouli
-    org: Cisco Systems, Inc.
-    email: moulchan@cisco.com
-  -
-    fullname: Rolf Winter
-    org: NEC Europe Ltd.
-    email: Rolf.Winter@neclab.eu
-  -
-    fullname: Thomas Dietz
-    org: NEC Europe Ltd.
-    email: Thomas.Dietz@neclab.eu
-
 normative:
 
 informative:
@@ -139,7 +121,7 @@ Source of this draft and an issue tracker can be found athttps://github.com/emil
 
       - As a consequence from the previous point, the ENTITY-MIB v4 {{?RFC6933}} is replaced by the Hardware YANG module RFC8348
 
-      - No focus on the battery management (as batteries haves some self-optimization features these days)
+      - battery management is removed (as batteries haves some self-optimization features these days)
 
       - Less focus on the Power over Ethernet management
 
@@ -562,8 +544,7 @@ Source of this draft and an issue tracker can be found athttps://github.com/emil
    Requirements for information on Power Inlets and Power Outlets of
    entities are specified in Section 5.2.  The monitoring of power and
    energy is covered by Sections 5.3 and 5.5, respectively.  Section 5.4
-   covers requirements related to entities' Power States.  Section 5.6
-   specifies requirements for monitoring batteries.  Finally, the
+   covers requirements related to entities' Power States.  Finally, the
    reporting of time series of values is covered by Section 5.7.
 
 ## General Information on Entities
@@ -923,19 +904,10 @@ Source of this draft and an issue tracker can be found athttps://github.com/emil
    provided energy for each individual Power State.  This extends the
    requirements on Power State statistics described in Section 5.4.7.
 
-## Obsolete Battery State from RFC6988
-
-   Batteries are built in component within a network device and have no
-   difference with other built in components such as power supply. Therefore
-   there is no need to monitor the battery status of these entities by
-   network management systems separately.
-
-   This document proposes to obsolete battery state from RFC6988.
-
 ## Time Series of Measured Values
 
    For some network management tasks, obtaining time series of measured
-   values from entities, such as power, energy, battery charge, etc., is
+   values from entities, such as power, energy, etc., is
    required.
 
    In general, time series measurements could be obtained in many
@@ -957,8 +929,7 @@ Source of this draft and an issue tracker can be found athttps://github.com/emil
    4.  Which reporting model should be used (push or pull)?
 
    The most discussed and probably most needed quantity is energy.  But
-   a need for others, such as power and battery charge, can be
-   identified as well.
+   a need for others, such as power, can be identified as well.
 
    There are three time interval types under discussion for accumulated
    quantities such as energy.  They can be reported as total values,
@@ -1230,24 +1201,9 @@ Source of this draft and an issue tracker can be found athttps://github.com/emil
 
 # Acknowledgments
 
-   RFC 6988 Ackowledgement.
-   The authors would like to thank Ralf Wolter for his first essay on
-   this document.  Many thanks to William Mielke, John Parello,
-   JinHyeock Choi, Georgios Karagiannis, and Michael Suchoff for their
-   helpful comments on the document.  Many thanks to Stephen Farrell,
-   Robert Sparks, Adrian Farrel, Barry Leiba, Brian Haberman, Peter
-   Resnick, Sean Turner, Stewart Bryant, and Ralph Droms for their IESG
-   reviews.  Finally, special thanks to the document shepherd, Nevil
-   Brownlee, and to the EMAN working group chairs: Nevil Brownlee and
-   Bruce Nordman.
+   The authors would like to thank ...
 
-# Open Issues to be Discussed at the BoF
-
-   o EMAN "eco system" includes many MIBs. Which one are largely deployed?
-   Will they/How can they benefit of the GREEN works?
-
-   o Battery use cases migh be different 10 years after. Should it be addressed in a future charter? So far the decision is no. Nevertheless
-   it might be generalized to cover backup sources of energy capabilities and use.
+# Open Issues
 
    o Do we need to keep a reference to the MIB object entPhysicalUUID (in section 4.4 from ENTITY-MIB v4) in case of legacy device (MIB)?
 
