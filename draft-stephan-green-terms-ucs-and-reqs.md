@@ -1311,5 +1311,5 @@ Source of this draft and an issue tracker can be found athttps://github.com/emil
               methods for telecommunication equipment", 2020,
               <https://www.itu.int/rec/T-REC-L.1310/en>.
 
-
+# Appendix
 
