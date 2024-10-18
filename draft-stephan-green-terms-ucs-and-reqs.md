@@ -23,6 +23,7 @@ venue:
 v: 3
 
 author:
+
   -
     fullname: Emile Stephan
     org: Orange
@@ -30,7 +31,7 @@ author:
   -
     fullname: Marisol Palmero
     org: Cisco Systems, Inc.
-    email: mpalmero@cisco.com    
+    email: mpalmero@cisco.com
   -
     fullname: Benoit Claise
     org: Huawei
