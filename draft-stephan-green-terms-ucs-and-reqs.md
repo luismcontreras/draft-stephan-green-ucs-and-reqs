@@ -597,14 +597,11 @@ However, Power and Energy Monitoring and Control MIB modules has not been conver
 
 ### List of Power Interfaces
 
-   The standard must provide means for monitoring the list of Power
-   Interfaces of a device.
+   The standard must provide means for monitoring the list of Power Interfaces of a device.
 
 ### Operational Mode of Power Interfaces
 
-   The standard must provide means for monitoring the operational mode
-   of a Power Interface, which is either "Power Inlet" or "Power
-   Outlet".
+   The standard must provide means for monitoring the operational mode of a Power Interface, which is either "Power Inlet" or "Power Outlet".
 
 ### Corresponding Power Outlet
 
@@ -1318,16 +1315,16 @@ This appendix should be removed in the next version
 
 ## High-level Differences with RFC6988
 
-   The following section will delve into the specific details but from a high level point of view, the differences between this document and the RFC6988 are:
+The following section will delve into the specific details but from a high level point of view, the differences between this document and the RFC6988 are:
 
-      - New definition for "Energy Efficiency Management"
+- New definition for "Energy Efficiency Management"
 
-      - A focus towards YANG, and not any longer on MIB modules
+- A focus towards YANG, and not any longer on MIB modules
 
-      - As a consequence from the previous point, the ENTITY-MIB v4 {{?RFC6933}} is replaced by the Hardware YANG module RFC8348
+- As a consequence from the previous point, the ENTITY-MIB v4 {{?RFC6933}} is replaced by the Hardware YANG module RFC8348
 
-      - battery management is removed (as batteries haves some self-optimization features these days)
+- battery management is removed (as batteries haves some self-optimization features these days)
 
-      - Less focus on the Power over Ethernet management
+- Less focus on the Power over Ethernet management
 
-      - A focus on reporting lifecycle management, considering energy and transformation towards carbon awareness
+- A focus on reporting lifecycle management, considering energy and transformation towards carbon awareness
