@@ -82,55 +82,21 @@ Source of this draft and an issue tracker can be found athttps://github.com/emil
 
 # Introduction
 
-## In Preparation of the GREEN BoF at IETF 120
+At this step the specifications made by the IETF, aka in WGs like EMAN, on energy managements focus mainly on SMI (aka MIBs) instead of YANG and cover neither the control nor energy efficiency. 
+As a consequence, the willing of this document is to resuse pieces of the energy-related requirements of RFC6988 and to map them in a framework of YANG/Netconf for energy efficiency that might reuse "YANG Data Model for Hardware Management" {{?RFC8348}}, a conversion of former Entity MIB module, Entity Sensor MIB module, Entity State MIB modules.
 
-   The EMAN (Energy MANagement) working group (WG), created in 2010 and now concluded, has produced multiples RFCs
-
-      * {{?RFC7603}}, Energy Management (EMAN) Applicability Statement
-
-      * {{?RFC7577}}, Definition of Managed Objects for Battery Monitoring
-
-      * {{?RFC7460}}, Monitoring and Control MIB for Power and Energy
-
-      * {{?RFC7461}}, Energy Object Context MIB
-
-      * {{?RFC7326}}, Energy Management Framework
-
-      * {{?RFC6988}}, Requirements for Energy Management
-
-      * {{?RFC6933}}, Entity MIB (Version 4)
-
-   Note also that some other energy-related MIB modules have been created, but not by the EMAN Working Group
-
-      * {{?RFC3433}}, Entity Sensor MIB module
-
-      * {{?RFC3621}}, Power Ethernet MIB modules
-
-      * {{?RFC1628}}, UPS Power Monitoring MIB module
-
-      * LLDP MIB module and LLDP MED MIB module
-
-   Due to limitations regarding Writeable MIB module, one IESG statement published in 2014 encourages the use the NETCONF/YANG standards for configuration. Based on the YANG modules    developments, three MIB  modules (Entity MIB module, Entity Sensor MIB module, Entity State MIB module) have been converted into the "YANG Data Model for Hardware Management" {{?RFC8348}}.
-
-   However, Power and Energy Monitoring and Control MIB modules has not been converted yet into YANG modules.
-
-   Eleven years after the EMAN requirements RFC 6988 publication, this document re-evaluates the energy-related requirements, as a preparation for the GREEN BoF at IETF 120.
-
-## High-level Differences with RFC6988
-
-   The following section will delve into the specific details but from a high level point of view, the differences between this document and the RFC6988 are:
+The following section will delve into the specific details but from a high level point of view, the differences between this document and the RFC6988 are:
 
       - New definition for "Energy Efficiency Management"
 
       - A focus towards YANG, and not any longer on MIB modules
 
-      - As a consequence from the previous point, the ENTITY-MIB v4 {{?RFC6933}} is replaced by the Hardware YANG module RFC8348
-
-      - battery management is removed (as batteries haves some self-optimization features these days)
-
-      - Less focus on the Power over Ethernet management
+      - Usage of the Hardware YANG module RFC8348
 
       - A focus on reporting lifecycle management, considering energy and transformation towards carbon awareness
+
+However, Power and Energy Monitoring and Control MIB modules has not been converted yet into YANG modules.
+
 
 ## Background
 
@@ -1314,3 +1280,54 @@ Source of this draft and an issue tracker can be found athttps://github.com/emil
 
 # Appendix
 
+This appendix should be removed in the next version
+
+## In Preparation of the GREEN BoF at IETF 120
+
+   The EMAN (Energy MANagement) working group (WG), created in 2010 and now concluded, has produced multiples RFCs
+
+      * {{?RFC7603}}, Energy Management (EMAN) Applicability Statement
+
+      * {{?RFC7577}}, Definition of Managed Objects for Battery Monitoring
+
+      * {{?RFC7460}}, Monitoring and Control MIB for Power and Energy
+
+      * {{?RFC7461}}, Energy Object Context MIB
+
+      * {{?RFC7326}}, Energy Management Framework
+
+      * {{?RFC6988}}, Requirements for Energy Management
+
+      * {{?RFC6933}}, Entity MIB (Version 4)
+
+   Note also that some other energy-related MIB modules have been created, but not by the EMAN Working Group
+
+      * {{?RFC3433}}, Entity Sensor MIB module
+
+      * {{?RFC3621}}, Power Ethernet MIB modules
+
+      * {{?RFC1628}}, UPS Power Monitoring MIB module
+
+      * LLDP MIB module and LLDP MED MIB module
+
+   Due to limitations regarding Writeable MIB module, one IESG statement published in 2014 encourages the use the NETCONF/YANG standards for configuration. Based on the YANG modules    developments, three MIB  modules (Entity MIB module, Entity Sensor MIB module, Entity State MIB module) have been converted into the "YANG Data Model for Hardware Management" {{?RFC8348}}.
+
+   However, Power and Energy Monitoring and Control MIB modules has not been converted yet into YANG modules.
+
+   Eleven years after the EMAN requirements RFC 6988 publication, this document re-evaluates the energy-related requirements, as a preparation for the GREEN BoF at IETF 120.
+
+## High-level Differences with RFC6988
+
+   The following section will delve into the specific details but from a high level point of view, the differences between this document and the RFC6988 are:
+
+      - New definition for "Energy Efficiency Management"
+
+      - A focus towards YANG, and not any longer on MIB modules
+
+      - As a consequence from the previous point, the ENTITY-MIB v4 {{?RFC6933}} is replaced by the Hardware YANG module RFC8348
+
+      - battery management is removed (as batteries haves some self-optimization features these days)
+
+      - Less focus on the Power over Ethernet management
+
+      - A focus on reporting lifecycle management, considering energy and transformation towards carbon awareness
