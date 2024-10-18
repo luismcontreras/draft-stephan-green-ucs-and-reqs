@@ -173,32 +173,32 @@ Table of Contents
      8.3.  Reporting Quantities Accumulated over Multiple Entities
      8.4.  List of All Entities on Which Information Is Reported
      8.5.  Content of Reports on Other Entities
-     8.6.  Requirements extracted from proponents drafts
-     8.7.  Operator'requirements from [charter-refinement] document
-     8.8.  Requirements extracted from [legacy-path]
-     8.9.  Requirements from [rfc6988bis-green] draft Open Issues
-     8.10. Requirements extracted from [sustainability-insights] uses
-            cases
-     8.11. Framework Discussed During the BoF
-   9.  Controlling Other Entities
-     9.1.  Controlling Power States of Other Entities
-       9.1.1.  Control of Power States of Other Entities
-       9.1.2.  Identity of Other Power State Controlled Entities
-       9.1.3.  List of All Power State Controlled Entities
-       9.1.4.  List of All Power State Controllers
-     9.2.  Controlling Power Supply
-   10. Security Considerations
-     10.1.  Secure Energy Management
-     10.2.  Isolation of Insufficiently Secure Entities
-     10.3.  Optional Restriction of Functions
-   11. Acknowledgments
-   12. Open Issues
-   13. References
-     13.1.  Normative References
-   14. Appendix
-     14.1.  In Preparation of the GREEN BoF at IETF 120
-     14.2.  High-level Differences with RFC6988
-   15. Informative References
+   9.  Requirements extracted from proponents drafts
+     9.1.  Operator'requirements from [charter-refinement] document
+     9.2.  Requirements extracted from [legacy-path]
+     9.3.  Requirements from [rfc6988bis-green] draft Open Issues
+     9.4.  Requirements extracted from [sustainability-insights] uses
+           cases
+     9.5.  Framework Discussed During the BoF
+   10. Controlling Other Entities
+     10.1.  Controlling Power States of Other Entities
+       10.1.1.  Control of Power States of Other Entities
+       10.1.2.  Identity of Other Power State Controlled Entities
+       10.1.3.  List of All Power State Controlled Entities
+       10.1.4.  List of All Power State Controllers
+     10.2.  Controlling Power Supply
+   11. Security Considerations
+     11.1.  Secure Energy Management
+     11.2.  Isolation of Insufficiently Secure Entities
+     11.3.  Optional Restriction of Functions
+   12. Acknowledgments
+   13. Open Issues
+   14. References
+     14.1.  Normative References
+   15. Appendix
+     15.1.  In Preparation of the GREEN BoF at IETF 120
+     15.2.  High-level Differences with RFC6988
+   16. Informative References
    Authors' Addresses
 
 1.  Introduction
@@ -1216,7 +1216,7 @@ Table of Contents
    must provide means for indicating what type or types of energy-
    related information can be reported, and for which entities.
 
-8.6.  Requirements extracted from proponents drafts
+9.  Requirements extracted from proponents drafts
 
    This section extracts and groups requirements from the revisit of
    operator's requirements made in the last charter refinement work
@@ -1229,7 +1229,7 @@ Table of Contents
    The tables below respect the format and the semantic of operators
    requirements table of [charter-refinement].
 
-8.7.  Operator'requirements from [charter-refinement] document
+9.1.  Operator'requirements from [charter-refinement] document
 
    The table below is a copy of the operator'requirements table of
    [charter-refinement].  They are based on the inputs received from
@@ -1384,7 +1384,7 @@ Table of Contents
 
                                   Table 1
 
-8.8.  Requirements extracted from [legacy-path]
+9.2.  Requirements extracted from [legacy-path]
 
     +============+============================+===========+==========+
     | category   | requirements               | note      | Priority |
@@ -1412,7 +1412,7 @@ Table of Contents
    (iii) network-wide solution must include legacy devices and green-wg
    ready devices
 
-8.9.  Requirements from [rfc6988bis-green] draft Open Issues
+9.3.  Requirements from [rfc6988bis-green] draft Open Issues
 
    +===============+=================+=====================+==========+
    | category      | requirements    | note                | Priority |
@@ -1442,7 +1442,7 @@ Table of Contents
 
                                  Table 3
 
-8.10.  Requirements extracted from [sustainability-insights] uses cases
+9.4.  Requirements extracted from [sustainability-insights] uses cases
 
    There are limited to energy consumption vs sustainability
 
@@ -1489,7 +1489,7 @@ Table of Contents
 
                                   Table 4
 
-8.11.  Framework Discussed During the BoF
+9.5.  Framework Discussed During the BoF
 
    The overall framework is shown in Figure 1.
 
@@ -1556,13 +1556,13 @@ Table of Contents
 
    (g) Control Energy Saving
 
-9.  Controlling Other Entities
+10.  Controlling Other Entities
 
    This section specifies requirements for controlling Power States and
    power supply of entities by communicating with other entities that
    have the means for doing that control.
 
-9.1.  Controlling Power States of Other Entities
+10.1.  Controlling Power States of Other Entities
 
    RFC6988 allow some entities have control over Power States of other
    entities, e.g., in Building automation case where a gateway to a
@@ -1577,32 +1577,32 @@ Table of Contents
    controlled by the Energy Management System has the means to report
    the list of these other entities.
 
-9.1.1.  Control of Power States of Other Entities
+10.1.1.  Control of Power States of Other Entities
 
    The standard must provide means for an Energy Management System to
    send Power State control commands to an entity that controls the
    Power States of entities other than the entity to which the command
    was sent.
 
-9.1.2.  Identity of Other Power State Controlled Entities
+10.1.2.  Identity of Other Power State Controlled Entities
 
    The standard must provide means for reporting the identities of the
    entities for which the reporting entity has the means to control
    their Power States.  Note that, in some situations, a manual
    configuration might be required to populate this information.
 
-9.1.3.  List of All Power State Controlled Entities
+10.1.3.  List of All Power State Controlled Entities
 
    The standard must provide means for an entity to report the list of
    all entities for which it can control the Power State.
 
-9.1.4.  List of All Power State Controllers
+10.1.4.  List of All Power State Controllers
 
    The standard must provide means for an entity that receives commands
    controlling its Power State from other entities to report the list of
    all those entities.
 
-9.2.  Controlling Power Supply
+10.2.  Controlling Power Supply
 
    Some entities may have control of the power supply of other entities,
    for example, because the other entity is supplied via a Power Outlet
@@ -1615,7 +1615,7 @@ Table of Contents
    these other entities.  This need is already addressed by requirements
    in Sections 5.2.3 and 5.2.4.
 
-10.  Security Considerations
+11.  Security Considerations
 
    Controlling Power State and power supply of entities are considered
    highly sensitive actions, since they can significantly affect the
@@ -1645,21 +1645,21 @@ Table of Contents
    actions, so integrity of transmitted information and authentication
    of the origin may be needed.
 
-10.1.  Secure Energy Management
+11.1.  Secure Energy Management
 
    The standard must provide privacy, integrity, and authentication
    mechanisms for all actions addressed in Sections 5 through 8.  The
    security mechanisms must meet the security requirements detailed in
    Section 1.4 of [RFC3411].
 
-10.2.  Isolation of Insufficiently Secure Entities
+11.2.  Isolation of Insufficiently Secure Entities
 
    The standard must provide means to allow the isolation of entities
    that are not sufficiently secure to operate on the public Internet,
    e.g., behind a gateway that implements sufficient security that the
    vulnerable entities are not directly exposed to the Internet.
 
-10.3.  Optional Restriction of Functions
+11.3.  Optional Restriction of Functions
 
    The standard must allow compliant implementations to disable
    sensitive functions, or to not implement such functions at all, when
@@ -1667,11 +1667,11 @@ Table of Contents
    applies particularly to the control functions described in Sections 6
    and 8.
 
-11.  Acknowledgments
+12.  Acknowledgments
 
    The authors would like to thank ...
 
-12.  Open Issues
+13.  Open Issues
 
    o Do we need to keep a reference to the MIB object entPhysicalUUID
    (in section 4.4 from ENTITY-MIB v4) in case of legacy device (MIB)?
@@ -1744,9 +1744,9 @@ Table of Contents
    energy spent on behalf of a particular customer/user.  Open issue,
    marisolpalmero/GREEN-bof#89
 
-13.  References
+14.  References
 
-13.1.  Normative References
+14.1.  Normative References
 
    [IEC.61850-7-4] International Electrotechnical Commission,
    "Communication networks and systems for power utility automation --
@@ -1785,11 +1785,11 @@ Table of Contents
    https://www.itu.int/rec/T-REC-L.1310/en (https://www.itu.int/rec/T-
    REC-L.1310/en).
 
-14.  Appendix
+15.  Appendix
 
    This appendix should be removed in the next version
 
-14.1.  In Preparation of the GREEN BoF at IETF 120
+15.1.  In Preparation of the GREEN BoF at IETF 120
 
    The EMAN (Energy MANagement) working group (WG), created in 2010 and
    now concluded, has produced multiples RFCs
@@ -1833,7 +1833,7 @@ Table of Contents
    document re-evaluates the energy-related requirements, as a
    preparation for the GREEN BoF at IETF 120.
 
-14.2.  High-level Differences with RFC6988
+15.2.  High-level Differences with RFC6988
 
    The following section will delve into the specific details but from a
    high level point of view, the differences between this document and
@@ -1854,7 +1854,7 @@ Table of Contents
    *  A focus on reporting lifecycle management, considering energy and
       transformation towards carbon awareness
 
-15.  Informative References
+16.  Informative References
 
    [I-D.ietf-ivy-network-inventory-yang]
               Yu, C., Belotti, S., Bouquier, J., Peruzzini, F., and P.
