@@ -24,6 +24,14 @@ v: 3
 
 author:
   -
+    fullname: Emile Stephan
+    org: Orange
+    email: emile.stephan@orange.com
+  -
+    fullname: Marisol Palmero
+    org: Cisco Systems, Inc.
+    email: mpalmero@cisco.com    
+  -
     fullname: Benoit Claise
     org: Huawei
     email: benoit.claise@huawei.com
@@ -31,14 +39,6 @@ author:
     fullname: Qin Wu
     org: Huawei
     email: bill.wu@huawei.com
-  -
-    fullname: Marisol Palmero
-    org: Cisco Systems, Inc.
-    email: mpalmero@cisco.com
-  -
-    fullname: Emile Stephan
-    org: Orange
-    email: emile.stephan@orange.com
   -
     fullname: Luis M. Contreras
     org: Telefonica
