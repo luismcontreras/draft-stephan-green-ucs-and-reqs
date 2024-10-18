@@ -1056,7 +1056,7 @@ However, Power and Energy Monitoring and Control MIB modules has not been conver
    must provide means for indicating what type or types of energy-
    related information can be reported, and for which entities.
 
-## Requirements extracted from proponents drafts
+# Requirements extracted from proponents drafts
 
 This section extracts and groups requirements from the revisit of  operator's requirements made in the last charter refinement work [charter-refinement] and from the drafts which provided material [GREEN-BOF], [sustainability-insights], [legacy-path] and [rfc6988bis-green] to the green BoF. The aim is to determine initial sets of requirements actionable at different levels of the framework presented in [charter-refinement].
 
