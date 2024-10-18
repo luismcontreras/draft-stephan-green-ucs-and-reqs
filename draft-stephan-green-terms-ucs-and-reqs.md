@@ -16,7 +16,7 @@ venue:
   group: "Getting Ready for Energy-Efficient Networking"
   type: "Working Group"
   mail: "green@ietf.org"
-  arch: "https://mailarchive.ietf.org/arch/browse/green-bof/"
+  arch: "https://mailarchive.ietf.org/arch/browse/green/"
   github: "emile22/draft-stephan-green-terms-ucs-and-reqs"
   latest: "https://emile22.github.io/draft-stephan-green-terms-ucs-and-reqs/draft-stephan-green-terms-ucs-and-reqs.html"
 
