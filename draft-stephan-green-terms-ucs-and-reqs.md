@@ -39,6 +39,10 @@ author:
     fullname: Emile Stephan
     org: Orange
     email: emile.stephan@orange.com
+  -
+    fullname: Luis M. Contreras
+    org: Telefonica
+    email: luismiguel.contrerasmurillo@telefonica.com
 
 contributor:
   -
