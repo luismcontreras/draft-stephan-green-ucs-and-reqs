@@ -82,18 +82,18 @@ Source of this draft and an issue tracker can be found athttps://github.com/emil
 
 # Introduction
 
-At this step the specifications made by the IETF, aka in WGs like EMAN, on energy managements focus mainly on SMI (aka MIBs) instead of YANG and cover neither the control nor energy efficiency. 
+At this step the specifications made by the IETF, aka in WGs like EMAN, on energy managements focus mainly on SMI (aka MIBs) instead of YANG and cover neither the control nor energy efficiency.
 As a consequence, the willing of this document is to resuse pieces of the energy-related requirements of RFC6988 and to map them in a framework of YANG/Netconf for energy efficiency that might reuse "YANG Data Model for Hardware Management" {{?RFC8348}}, a conversion of former Entity MIB module, Entity Sensor MIB module, Entity State MIB modules.
 
 The following section will delve into the specific details but from a high level point of view, the differences between this document and the RFC6988 are:
 
-      - New definition for "Energy Efficiency Management"
+- New definition for "Energy Efficiency Management"
 
-      - A focus towards YANG, and not any longer on MIB modules
+- A focus towards YANG, and not any longer on MIB modules
 
-      - Usage of the Hardware YANG module RFC8348
+- Usage of the Hardware YANG module RFC8348
 
-      - A focus on reporting lifecycle management, considering energy and transformation towards carbon awareness
+- A focus on reporting lifecycle management, considering energy and transformation towards carbon awareness
 
 However, Power and Energy Monitoring and Control MIB modules has not been converted yet into YANG modules.
 
