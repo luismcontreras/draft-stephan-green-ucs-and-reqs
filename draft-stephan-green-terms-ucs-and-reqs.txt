@@ -1492,17 +1492,20 @@ Table of Contents
    high level point of view, the differences between this document and
    the RFC6988 are:
 
-  - New definition for "Energy Efficiency Management"
+   *  New definition for "Energy Efficiency Management"
 
-  - A focus towards YANG, and not any longer on MIB modules
+   *  A focus towards YANG, and not any longer on MIB modules
 
-  - As a consequence from the previous point, the ENTITY-MIB v4 {{RFC6933}} is replaced by the Hardware YANG module RFC8348
+   *  As a consequence from the previous point, the ENTITY-MIB v4
+      [RFC6933] is replaced by the Hardware YANG module RFC8348
 
-  - battery management is removed (as batteries haves some self-optimization features these days)
+   *  battery management is removed (as batteries haves some self-
+      optimization features these days)
 
-  - Less focus on the Power over Ethernet management
+   *  Less focus on the Power over Ethernet management
 
-  - A focus on reporting lifecycle management, considering energy and transformation towards carbon awareness
+   *  A focus on reporting lifecycle management, considering energy and
+      transformation towards carbon awareness
 
 15.  Informative References
 
