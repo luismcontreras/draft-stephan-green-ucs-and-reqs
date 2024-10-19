@@ -5,17 +5,17 @@
 Getting Ready for Energy-Efficient Networking                 E. Stephan
 Internet-Draft                                                    Orange
 Intended status: Informational                                M. Palmero
-Expires: 21 April 2025                               Cisco Systems, Inc.
+Expires: 22 April 2025                               Cisco Systems, Inc.
                                                                B. Claise
                                                                    Q. Wu
                                                                   Huawei
                                                          L. M. Contreras
                                                               Telefonica
-                                                         18 October 2024
+                                                         19 October 2024
 
 
              Requirements for Energy Efficiency Management
-             draft-stephan-green-terms-ucs-and-reqs-latest
+                draft-stephan-green-ucs-and-reqs-latest
 
 Abstract
 
@@ -66,10 +66,10 @@ About This Document
    This note is to be removed before publishing as an RFC.
 
    The latest revision of this draft can be found at
-   https://emile22.github.io/draft-stephan-green-terms-ucs-and-reqs/
-   draft-stephan-green-terms-ucs-and-reqs.html.  Status information for
-   this document may be found at https://datatracker.ietf.org/doc/draft-
-   stephan-green-terms-ucs-and-reqs/.
+   https://emile22.github.io/draft-stephan-green-ucs-and-reqs/draft-
+   stephan-green-ucs-and-reqs.html.  Status information for this
+   document may be found at https://datatracker.ietf.org/doc/draft-
+   stephan-green-ucs-and-reqs/.
 
    Discussion of this document takes place on the Getting Ready for
    Energy-Efficient Networking Working Group mailing list
@@ -78,7 +78,7 @@ About This Document
    https://www.ietf.org/mailman/listinfo/green/.
 
    Source for this draft and an issue tracker can be found at
-   https://github.com/emile22/draft-stephan-green-terms-ucs-and-reqs.
+   https://github.com/emile22/draft-stephan-green-ucs-and-reqs.
 
 Status of This Memo
 
@@ -95,7 +95,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 21 April 2025.
+   This Internet-Draft will expire on 22 April 2025.
 
 Copyright Notice
 
@@ -343,6 +343,9 @@ Table of Contents
    be implemented by compliant implementations.
 
 2.  Terminology
+
+   The terms below are a sub set of the whole terminology.  There are
+   many other drafts givving additionnal definitons.
 
    The terms specified in the terminology section are capitalized
    throughout the document; the exceptions are the well-known terms
