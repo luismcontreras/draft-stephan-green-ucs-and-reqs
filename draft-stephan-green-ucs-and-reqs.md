@@ -92,7 +92,7 @@ normative:
               ITU-T, "L.1310 : Energy efficiency metrics and measurement
               methods for telecommunication equipment", 2020,
               <https://www.itu.int/rec/T-REC-L.1310/en>.
-              
+
 informative:
 
   operators-inputs:
