@@ -200,6 +200,8 @@ However, Power and Energy Monitoring and Control MIB modules has not been conver
 
 # Terminology
 
+The terms below are a sub set of the whole terminology. There are many other drafts givving additionnal definitons.
+
    The terms specified in the terminology section are capitalized
    throughout the document; the exceptions are the well-known terms
    "energy" and "power".  These terms are generic and are used in
