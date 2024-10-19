@@ -1,7 +1,7 @@
 ---
 title: "Requirements for Energy Efficiency Management"
 abbrev: "Requirements for Energy Efficiency"
-docname: draft-stephan-green-terms-ucs-and-reqs-latest
+docname: draft-stephan-green-ucs-and-reqs-latest
 category: info
 stand_alone: true
 
@@ -17,8 +17,8 @@ venue:
   type: "Working Group"
   mail: "green@ietf.org"
   arch: "https://mailarchive.ietf.org/arch/browse/green/"
-  github: "emile22/draft-stephan-green-terms-ucs-and-reqs"
-  latest: "https://emile22.github.io/draft-stephan-green-terms-ucs-and-reqs/draft-stephan-green-terms-ucs-and-reqs.html"
+  github: "emile22/draft-stephan-green-ucs-and-reqs"
+  latest: "https://emile22.github.io/draft-stephan-green-ucs-and-reqs/draft-stephan-green-ucs-and-reqs.html"
 
 v: 3
 
