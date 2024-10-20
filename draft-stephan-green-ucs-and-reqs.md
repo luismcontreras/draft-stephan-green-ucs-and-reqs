@@ -47,52 +47,6 @@ author:
 
 normative:
 
-   [IEC.61850-7-4]
-              International Electrotechnical Commission, "Communication
-              networks and systems for power utility automation --
-              Part 7-4: Basic communication structure -- Compatible
-              logical node classes and data object classes", March 2010.
-
-   [IEC.62053-21]
-              International Electrotechnical Commission, "Electricity
-              metering equipment (a.c.) -- Particular requirements --
-              Part 21: Static meters for active energy (classes 1
-              and 2)", January 2003.
-
-   [IEC.62053-22]
-              International Electrotechnical Commission, "Electricity
-              metering equipment (a.c.) -- Particular requirements --
-              Part 22: Static meters for active energy (classes 0,2 S
-              and 0,5 S)", January 2003.
-
-   [IEEE-100] IEEE, "The Authoritative Dictionary of IEEE Standards
-              Terms, IEEE 100, Seventh Edition", December 2000.
-
-   [IEEE-1621]
-              Institute of Electrical and Electronics Engineers,
-              "IEEE 1621-2004 - IEEE Standard for User Interface
-              Elements in Power Control of Electronic Devices Employed
-              in Office/Consumer Environments", 2004.
-
-
-   [ATIS-0600015.03.2013]
-              ATIS, "ATIS-0600015.03.2013: Energy Efficiency for
-              Telecommunication Equipment: Methodology for Measurement
-              and Reporting for Router and Ethernet Switch Products",
-              2013.
-
-   [ETSI-ES-203-136]
-              ETSI, "ETSI ES 203 136: Environmental Engineering (EE);
-              Measurement methods for energy efficiency of router and
-              switch equipment", 2017, <https://www.etsi.org/deliver/
-              etsi_es/203100_203199/203136/01.02.00_50/
-              es_203136v010200m.pdf>.
-
-   [ITUT-L.1310]
-              ITU-T, "L.1310 : Energy efficiency metrics and measurement
-              methods for telecommunication equipment", 2020,
-              <https://www.itu.int/rec/T-REC-L.1310/en>.
-
 informative:
 
   operators-inputs:
@@ -1419,6 +1373,56 @@ The main elements in the framework are as follows:
    o Consideration to include in scope, allocate/compute and report the energy
    spent on behalf of a particular customer/user.
    Open issue, marisolpalmero/GREEN-bof#89
+
+# References
+
+## Normative References
+
+   [IEC.61850-7-4]
+              International Electrotechnical Commission, "Communication
+              networks and systems for power utility automation --
+              Part 7-4: Basic communication structure -- Compatible
+              logical node classes and data object classes", March 2010.
+
+   [IEC.62053-21]
+              International Electrotechnical Commission, "Electricity
+              metering equipment (a.c.) -- Particular requirements --
+              Part 21: Static meters for active energy (classes 1
+              and 2)", January 2003.
+
+   [IEC.62053-22]
+              International Electrotechnical Commission, "Electricity
+              metering equipment (a.c.) -- Particular requirements --
+              Part 22: Static meters for active energy (classes 0,2 S
+              and 0,5 S)", January 2003.
+
+   [IEEE-100] IEEE, "The Authoritative Dictionary of IEEE Standards
+              Terms, IEEE 100, Seventh Edition", December 2000.
+
+   [IEEE-1621]
+              Institute of Electrical and Electronics Engineers,
+              "IEEE 1621-2004 - IEEE Standard for User Interface
+              Elements in Power Control of Electronic Devices Employed
+              in Office/Consumer Environments", 2004.
+
+
+   [ATIS-0600015.03.2013]
+              ATIS, "ATIS-0600015.03.2013: Energy Efficiency for
+              Telecommunication Equipment: Methodology for Measurement
+              and Reporting for Router and Ethernet Switch Products",
+              2013.
+
+   [ETSI-ES-203-136]
+              ETSI, "ETSI ES 203 136: Environmental Engineering (EE);
+              Measurement methods for energy efficiency of router and
+              switch equipment", 2017, <https://www.etsi.org/deliver/
+              etsi_es/203100_203199/203136/01.02.00_50/
+              es_203136v010200m.pdf>.
+
+   [ITUT-L.1310]
+              ITU-T, "L.1310 : Energy efficiency metrics and measurement
+              methods for telecommunication equipment", 2020,
+              <https://www.itu.int/rec/T-REC-L.1310/en>.
 
 # Appendix
 
