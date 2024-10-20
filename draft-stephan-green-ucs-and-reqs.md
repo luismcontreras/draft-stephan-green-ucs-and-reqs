@@ -1420,9 +1420,6 @@ The main elements in the framework are as follows:
    spent on behalf of a particular customer/user.
    Open issue, marisolpalmero/GREEN-bof#89
 
-
-# References
-
 # Appendix
 
 This appendix should be removed in the next version
