@@ -5,13 +5,13 @@
 Getting Ready for Energy-Efficient Networking                 E. Stephan
 Internet-Draft                                                    Orange
 Intended status: Informational                                M. Palmero
-Expires: 22 April 2025                               Cisco Systems, Inc.
+Expires: 23 April 2025                               Cisco Systems, Inc.
                                                                B. Claise
                                                                    Q. Wu
                                                                   Huawei
                                                          L. M. Contreras
                                                               Telefonica
-                                                         19 October 2024
+                                                         20 October 2024
 
 
              Requirements for Energy Efficiency Management
@@ -95,7 +95,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 22 April 2025.
+   This Internet-Draft will expire on 23 April 2025.
 
 Copyright Notice
 
