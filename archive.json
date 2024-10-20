@@ -1,0 +1,167 @@
+{
+  "magic": "E!vIA5L86J2I",
+  "timestamp": "2024-10-20T01:03:26.504947+00:00",
+  "repo": "emile22/draft-stephan-green-ucs-and-reqs",
+  "labels": [
+    {
+      "name": "bug",
+      "description": "Something isn't working",
+      "color": "d73a4a"
+    },
+    {
+      "name": "documentation",
+      "description": "Improvements or additions to documentation",
+      "color": "0075ca"
+    },
+    {
+      "name": "duplicate",
+      "description": "This issue or pull request already exists",
+      "color": "cfd3d7"
+    },
+    {
+      "name": "enhancement",
+      "description": "New feature or request",
+      "color": "a2eeef"
+    },
+    {
+      "name": "good first issue",
+      "description": "Good for newcomers",
+      "color": "7057ff"
+    },
+    {
+      "name": "help wanted",
+      "description": "Extra attention is needed",
+      "color": "008672"
+    },
+    {
+      "name": "invalid",
+      "description": "This doesn't seem right",
+      "color": "e4e669"
+    },
+    {
+      "name": "question",
+      "description": "Further information is requested",
+      "color": "d876e3"
+    },
+    {
+      "name": "wontfix",
+      "description": "This will not be worked on",
+      "color": "ffffff"
+    }
+  ],
+  "issues": [],
+  "pulls": [
+    {
+      "number": 1,
+      "id": "PR_kwDONBw63s5_CPWB",
+      "title": "removed contributors (quick test)",
+      "url": "https://github.com/emile22/draft-stephan-green-ucs-and-reqs/pull/1",
+      "state": "MERGED",
+      "author": "bclaise",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-10-18T00:41:28Z",
+      "updatedAt": "2024-10-18T09:40:45Z",
+      "baseRepository": "emile22/draft-stephan-green-ucs-and-reqs",
+      "baseRefName": "main",
+      "baseRefOid": "7e9be21ddded0c5831f6e97c3767f6955ae9da2f",
+      "headRepository": "bclaise/draft-stephan-green-terms-ucs-and-reqs",
+      "headRefName": "main",
+      "headRefOid": "afadddc976919b53db6c8236e820e77e2f918ddf",
+      "closedAt": "2024-10-18T09:40:44Z",
+      "mergedAt": "2024-10-18T09:40:44Z",
+      "mergedBy": "emile22",
+      "mergeCommit": {
+        "oid": "d2ee989bf01e8ad450569fcfa87432a4987456bb"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDONBw63s6Nttqz",
+          "commit": {
+            "abbreviatedOid": "afadddc"
+          },
+          "author": "emile22",
+          "authorAssociation": "OWNER",
+          "state": "APPROVED",
+          "body": "thanks Marisol",
+          "createdAt": "2024-10-18T09:39:14Z",
+          "updatedAt": "2024-10-18T09:39:14Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "id": "PR_kwDONBw63s5_D_KN",
+      "title": "including Luis as author",
+      "url": "https://github.com/emile22/draft-stephan-green-ucs-and-reqs/pull/2",
+      "state": "MERGED",
+      "author": "marisolpalmero",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-10-18T07:22:15Z",
+      "updatedAt": "2024-10-18T09:41:23Z",
+      "baseRepository": "emile22/draft-stephan-green-ucs-and-reqs",
+      "baseRefName": "main",
+      "baseRefOid": "7e9be21ddded0c5831f6e97c3767f6955ae9da2f",
+      "headRepository": "marisolpalmero/draft-stephan-green-terms-ucs-and-reqs",
+      "headRefName": "main",
+      "headRefOid": "36b8df866526f64bb23a2e9b3f3305f63c397412",
+      "closedAt": "2024-10-18T09:41:23Z",
+      "mergedAt": "2024-10-18T09:41:23Z",
+      "mergedBy": "emile22",
+      "mergeCommit": {
+        "oid": "3e00c48602660fceb53ab9b93b99054fcf8e23e9"
+      },
+      "comments": [],
+      "reviews": [
+        {
+          "id": "PRR_kwDONBw63s6NtvSe",
+          "commit": {
+            "abbreviatedOid": "36b8df8"
+          },
+          "author": "emile22",
+          "authorAssociation": "OWNER",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-10-18T09:41:14Z",
+          "updatedAt": "2024-10-18T09:41:14Z",
+          "comments": []
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "id": "PR_kwDONBw63s5_HLIQ",
+      "title": "modify abstract",
+      "url": "https://github.com/emile22/draft-stephan-green-ucs-and-reqs/pull/3",
+      "state": "MERGED",
+      "author": "marisolpalmero",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2024-10-18T14:19:46Z",
+      "updatedAt": "2024-10-18T16:21:13Z",
+      "baseRepository": "emile22/draft-stephan-green-ucs-and-reqs",
+      "baseRefName": "main",
+      "baseRefOid": "d35e86ebb41334892bfd298942c79afa88e1f8b1",
+      "headRepository": "marisolpalmero/draft-stephan-green-terms-ucs-and-reqs",
+      "headRefName": "main",
+      "headRefOid": "1b806cdcdfde85207f5d55898c61a58db8116a89",
+      "closedAt": "2024-10-18T16:21:13Z",
+      "mergedAt": "2024-10-18T16:21:12Z",
+      "mergedBy": "emile22",
+      "mergeCommit": {
+        "oid": "d7b309a24cb874bc0bbc8476b6a355c4aab1a18c"
+      },
+      "comments": [],
+      "reviews": []
+    }
+  ]
+}
