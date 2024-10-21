@@ -65,19 +65,13 @@ informative:
 
 --- abstract
 
-This document delineates the requirements for standards specifications in Energy Efficiency Management, extending the foundational work of RFC6988 and incorporating recent insights from operator requirements and the GREEN BoF discussions. Eleven years after the publication of RFC6988, this document reassesses and updates the requirements to align with contemporary needs.
+This document delineates the requirements for standards specifications in Energy Efficiency Management, extending the foundational work of RFC6988 and incorporating recent insights from operator requirements and the GREEN BoF discussions. 
 
-The primary objectives of this draft, which are listed in the goals and scope with the creation of the GREEN WG charter, is focusing on two main targets:
+The primary objectives of this draft are focused on two main targets:
 (1) collecting and updating requirements for the management of energy-efficient networks, and
 (2) defining use cases for managing energy-efficient networks.
 
-Requirements are segmented into three core functions: discovery, monitoring, and control. Discovery functions involve identifying energy-managed networks, devices, and their components, as well as discovering the inventory of power components capabilities, optimization control capabilities, and nominal condition use. Monitoring functions encompass tracking power states, power attributes, energy consumption, network performance, and energy efficiency metrics. Control functions include managing energy-saving and optimization functions and the power states of energy-managed devices and their components.
-
-This document does not mandate specific use cases for compliant implementations but rather lists a few use cases that must be supported by standards for Energy Efficiency Management.
-
-Terms and definitions related to energy efficiency metrics will be discussed in later stages for potential integration.
-
-This draft merges two drafts: (draft-eman-green-rfc6988bis-01)[https://datatracker.ietf.org/doc/draft-eman-green-rfc6988bis/] and (draft-stephan-green-bof-reqs-collections-02)[https://datatracker.ietf.org/doc/draft-stephan-green-bof-reqs-collections/]
+This draft merges two existing drafts: (draft-eman-green-rfc6988bis-01)[https://datatracker.ietf.org/doc/draft-eman-green-rfc6988bis/] and (draft-stephan-green-bof-reqs-collections-02)[https://datatracker.ietf.org/doc/draft-stephan-green-bof-reqs-collections/]
 
 Discussion Venues
 
