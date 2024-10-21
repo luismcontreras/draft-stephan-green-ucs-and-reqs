@@ -1066,9 +1066,7 @@ The terms below are a sub set of the whole terminology. There are many other dra
 
 # Requirements extracted from proponents drafts
 
-This section extracts and groups requirements from the revisit of  operator's requirements made in the last charter refinement work [charter-refinement] and from the drafts which provided material [GREEN-BOF], [sustainability-insights], [legacy-path] and [rfc6988bis-green] to the green BoF. The aim is to determine initial sets of requirements actionable at different levels of the framework presented in [charter-refinement].
-
-The tables below respect the format and the semantic of operators requirements table of [charter-refinement].
+This section extracts and groups requirements from the documents of the proponents of the GREEN WG creation [GREEN-BOF], [sustainability-insights], [legacy-path] and [rfc6988bis-green]. The aim is to determine initial sets of requirements actionable at different levels of the framework presented below {{framework}}.
 
 ## Operator'requirements from [charter-refinement] document
 
@@ -1137,7 +1135,7 @@ There are limited to energy consumption vs sustainability
 |Power Optimization | Provide KPIs for energy efficiency parameters. Perform actions to reduce energy consumption | Monitor network and application performance to optimize power usage | 4 |
 |Control& Mgmt Switch off | Stop and restart WiFi APs with the right time, space, and service granularity | Save power consumption during periods when APs are not in use.| 2|
 
-## Framework Discussed During the BoF
+## Framework Discussed During the BoF {#framework}
 
 The overall framework is shown in {{green-framework}}.
 
