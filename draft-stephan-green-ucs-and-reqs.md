@@ -1283,7 +1283,24 @@ The main elements in the framework are as follows:
 
 (g) Control Energy Saving
 
-
+# Use Cases
+This section describes a number of relevant use cases with the purpose of elicit requirements for Energy Efficiency Management.
+This is a work in progress and additional use cases will be documented in next versions of this document.
+## Selective reduction of energy consumption in network parts proportional to traffic levels
+Traffic levels in a network follow patterns reflecting the behavior of consumers. Those patterns show periodicity in the terms of the traffic delivered, that can range from daily (from 00:00 to 23:59) to seasonal (e.g., winter to summer), showing peaks and valleys that could be exploited to reduce the consumption of energy in the network proportionally, in case the underlying network elements incorporate such capabilities. The reduction of energy consumption could be performed by leveraging on sleep modes in components up to more extreme actions such as switching off network components or modules. Such decisions are expected to no impact on the service delivered to customers, and could be accompanied by traffic relocation and / or concentration in the network.
+For this use case, the following requirements apply:
+|category|requirements|note|Priority|
+|:----|:----|:----|:----|
+|Observability|Component granularity, e.g., per line-card, per-port|Per component measurement|1|
+|Observability|Availability of information on the power consumption of the device, without needing instrumentation connected to the infrastructure|Related to connected device case|1|
+|Analysis|Common definition of energy efficiency in network devices/components|Standard metric|1|
+|Analysis|Ability of multi-layer analysis (e.g., IP plus optical)|POI Use Case|3|
+|Control& Mgmt|To have devices with elastic power consumption according to the carried traffic|Dynamic Energy Saving|2|
+|Control& Mgmt|Advanced sleep mode, needing some sort of low power mode when node is lightly utilized|Dynamic Energy Saving|2|
+|Control& Mgmt|Ability to steer traffic based on power savings|Traffic Engineering|4|
+These requirements are under revision as this is a work in progress.
+## Additional use cases
+To be completed in next versions.
 # Security Considerations
 
    Controlling Power State and power supply of entities are considered
