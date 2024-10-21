@@ -979,9 +979,8 @@ The terms below are a sub set of the whole terminology. There are many other dra
 
 ## Energy Mix
 
-   To facilitate carbon reporting for global reporting, it is important to
-   know the type of energy that network devices are consuming, such as
-   solar energy, wind energy, cogeneration, etc.
+   Energy efficiency is not limited to reducing the energy consumption, it is common to include carbon free, solar energy, wind energy, cogeneration in the efficiency. The type of the sources of energy of the power is one criteria of efficiency.
+   There are other dimensions that must visible: As many telecom locations include battery there is a requirement to known that the source come from a battery or directly from the grid...
 
 # Control of Entities
 
