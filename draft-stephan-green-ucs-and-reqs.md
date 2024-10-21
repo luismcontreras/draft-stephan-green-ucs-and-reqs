@@ -71,13 +71,7 @@ The primary objectives of this draft, which are listed in the goals and scope wi
 (1) collecting and updating requirements for the management of energy-efficient networks, and
 (2) defining use cases for managing energy-efficient networks.
 
-Requirements are segmented into three core functions: discovery, monitoring, and control. Discovery functions involve identifying energy-managed networks, devices, and their components, as well as discovering the inventory of power components capabilities, optimization control capabilities, and nominal condition use. Monitoring functions encompass tracking power states, power attributes, energy consumption, network performance, and energy efficiency metrics. Control functions include managing energy-saving and optimization functions and the power states of energy-managed devices and their components.
-
-This document does not mandate specific use cases for compliant implementations but rather lists a few use cases that must be supported by standards for Energy Efficiency Management.
-
-Terms and definitions related to energy efficiency metrics will be discussed in later stages for potential integration.
-
-This draft merges two drafts: (draft-eman-green-rfc6988bis-01)[https://datatracker.ietf.org/doc/draft-eman-green-rfc6988bis/] and (draft-stephan-green-bof-reqs-collections-02)[https://datatracker.ietf.org/doc/draft-stephan-green-bof-reqs-collections/]
+This draft merges two drafts: (draft-eman-green-rfc6988bis-01)[https://datatracker.ietf.org/doc/draft-eman-green-rfc6988bis/] and (draft-stephan-green-bof-reqs-collections-02)[https://datatracker.ietf.org/doc/draft-stephan-green-bof-reqs-collections/].
 
 Discussion Venues
 
@@ -87,6 +81,20 @@ Source of this draft and an issue tracker can be found at https://github.com/emi
 --- middle
 
 # Introduction
+
+This document delineates the requirements for standards specifications in Energy Efficiency Management, extending the foundational work of RFC6988 and incorporating recent insights from operator requirements and the GREEN BoF discussions. Eleven years after the publication of RFC6988, this document reassesses and updates the requirements to align with contemporary needs.
+
+The primary objectives of this draft, which are listed in the goals and scope with the creation of the GREEN WG charter, is focusing on two main targets:
+(1) collecting and updating requirements for the management of energy-efficient networks, and
+(2) defining use cases for managing energy-efficient networks.
+
+Requirements are segmented into three core functions: discovery, monitoring, and control. Discovery functions involve identifying energy-managed networks, devices, and their components, as well as discovering the inventory of power components capabilities, optimization control capabilities, and nominal condition use. Monitoring functions encompass tracking power states, power attributes, energy consumption, network performance, and energy efficiency metrics. Control functions include managing energy-saving and optimization functions and the power states of energy-managed devices and their components.
+
+This document does not mandate specific use cases for compliant implementations but rather lists a few use cases that must be supported by standards for Energy Efficiency Management.
+
+Terms and definitions related to energy efficiency metrics will be discussed in later stages for potential integration.
+
+This draft merges two drafts: (draft-eman-green-rfc6988bis-01)[https://datatracker.ietf.org/doc/draft-eman-green-rfc6988bis/] and (draft-stephan-green-bof-reqs-collections-02)[https://datatracker.ietf.org/doc/draft-stephan-green-bof-reqs-collections/].
 
 At this step the specifications made by the IETF, aka in WGs like EMAN, on energy managements focus mainly on SMI (aka MIBs) instead of YANG and cover neither the control nor energy efficiency.
 As a consequence, the willing of this document is to resuse pieces of the energy-related requirements of RFC6988 and to map them in a framework of YANG/Netconf for energy efficiency that might reuse "YANG Data Model for Hardware Management" {{?RFC8348}}, a conversion of former Entity MIB module, Entity Sensor MIB module, Entity State MIB modules.
