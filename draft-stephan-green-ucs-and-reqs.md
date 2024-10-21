@@ -88,10 +88,13 @@ Source of this draft and an issue tracker can be found at https://github.com/emi
 
 # Introduction
 
-At this step the specifications made by the IETF, aka in WGs like EMAN, on energy managements focus mainly on SMI (aka MIBs) instead of YANG and cover neither the control nor energy efficiency.
-As a consequence, the willing of this document is to resuse pieces of the energy-related requirements of RFC6988 and to map them in a framework of YANG/Netconf for energy efficiency that might reuse "YANG Data Model for Hardware Management" {{?RFC8348}}, a conversion of former Entity MIB module, Entity Sensor MIB module, Entity State MIB modules.
+With rising energy costs and an increasing awareness of the environmental impact of running information technology equipment, Energy efficiency Management functions and management interfaces are becoming an additional basic requirement for network management systems and devices connected to a network.
 
-The following section will delve into the specific details but from a high level point of view, the differences between this document and the RFC6988 are:
+This document defines requirements for standards specifications for Energy efficiency Management, including discovery functions, monitoring functions and control functions.
+
+For that purpose, the aim of this document is to resuse pieces of the energy-related requirements of RFC6988 and to map them in a framework of YANG/Netconf for energy efficiency that might reuse "YANG Data Model for Hardware Management" {{?RFC8348}}.
+
+The following sections will delve into the specific details but from a high level point of view, the differences between this document and the RFC6988 are:
 
 - New definition for "Energy Efficiency Management"
 
@@ -101,20 +104,13 @@ The following section will delve into the specific details but from a high level
 
 - A focus on reporting lifecycle management, considering energy and transformation towards carbon awareness
 
-However, Power and Energy Monitoring and Control MIB modules has not been converted yet into YANG modules.
+This document does not mandate specific use cases for compliant implementations but rather lists a few use cases that must be supported by standards for Energy Efficiency Management.
 
+Terms and definitions related to energy efficiency metrics will be discussed in later stages for potential integration.
 
 ## Background
 
-   With rising energy costs and an increasing awareness of the
-   environmental impact of running information technology equipment, Energy
-   efficiency Management functions and management interfaces are becoming
-   an additional basic requirement for network management systems and devices
-   connected to a network.
 
-   This document defines requirements for standards specifications for
-   Energy efficiency Management, including discovery functions, monitoring functions
-   and control functions.
    Energy efficiency Management functions focus mainly on network devices and
    their built-in components that receive and provide electrical energy.  Devices such
    as switches, routers, servers and storage devices should have an IP address providing a
@@ -143,7 +139,7 @@ However, Power and Energy Monitoring and Control MIB modules has not been conver
    interest but rather with other entities, for example, entities
    upstream in a power distribution tree.
 
-## Conventional Requirements for Energy Efficiency Management
+## Requirements for Energy Efficiency Management
 
    The specification of requirements for an Energy Efficiency Management standard
    starts with Section 4, which addresses the identification of entities
@@ -157,8 +153,6 @@ However, Power and Energy Monitoring and Control MIB modules has not been conver
    specific information on Power States, Power Inlets, Power Outlets,
    power, energy.  The control of Power State and power saving functionalities,
   optimization functionalities by entities is covered by requirements specified in Section 6.
-
-## Specific Requirements for Energy Management
 
    While the conventional requirements summarized above seem to be all
    that would be needed for Energy Management, there are significant
@@ -190,6 +184,8 @@ However, Power and Energy Monitoring and Control MIB modules has not been conver
 
    These specific issues of Energy Management, as well as other issues,
    are covered by requirements specified in Sections 7 and 8.
+
+   Thus, requirements in this document are segmented into three core functions: discovery, monitoring, and control. Discovery functions involve identifying energy-managed networks, devices, and their components, as well as discovering the inventory of power components capabilities, optimization control capabilities, and nominal condition use. Monitoring functions encompass tracking power states, power attributes, energy consumption, network performance, and energy efficiency metrics. Control functions include managing energy-saving and optimization functions and the power states of energy-managed devices and their components.¶
 
    The requirements in these sections need a new Energy Management
    framework that deals with the specific nature of Energy Management.
