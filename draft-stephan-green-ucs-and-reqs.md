@@ -1017,7 +1017,20 @@ The terms below are a sub set of the whole terminology. There are many other dra
   In addition, the standard must provide means to support both local management and
   network wide management based on energy saving functionality.
 
-# Reporting on Other Entities
+# Reporting an controlling on Other Entities
+
+As discussed in Section 5, not all energy-related information may be
+   available at the entity in question.  Such information may be
+   provided by other entities.  This section groups the requirements for the discovery, the reporting and the control
+   of information. 
+
+The intend is to add a table in section 9.
+
+## Discovery of Power inlet Entities
+
+Energy consumption must not be accounted twice
+
+### Reporting on Other Entities
 
    As discussed in Section 5, not all energy-related information may be
    available at the entity in question.  Such information may be
@@ -1033,35 +1046,95 @@ The terms below are a sub set of the whole terminology. There are many other dra
    an accumulated value for a set of entities.  All of the entities
    belonging to that set need to be identified.
 
-## Reports on Other Entities
+### Reports on Other Entities
 
    The standard must provide means for an entity to report information
    on another entity.
 
-## Identity of Other Entities on Which Information Is Reported
+### Identity of Other Entities on Which Information Is Reported
 
    For entities that report on one or more other entities, the standard
    must provide means for reporting the identity of other entities on
    which information is reported.  Note that, in some situations, a
    manual configuration might be required to populate this information.
 
-## Reporting Quantities Accumulated over Multiple Entities
+### Reporting Quantities Accumulated over Multiple Entities
 
    The standard must provide means for reporting the list of all
    entities from which contributions are included in an accumulated
    value.
 
-## List of All Entities on Which Information Is Reported
+### List of All Entities on Which Information Is Reported
 
    For entities that report on one or more other entities, the standard
    must provide means for reporting the complete list of all those
    entities on which energy-related information can be reported.
 
-## Content of Reports on Other Entities
+### Content of Reports on Other Entities
 
    For entities that report on one or more other entities, the standard
    must provide means for indicating what type or types of energy-
    related information can be reported, and for which entities.
+
+## Controlling Other Entities
+
+   This section specifies requirements for controlling Power States and
+   power supply of entities by communicating with other entities that
+   have the means for doing that control.
+
+### Controlling Power States of Other Entities
+
+   RFC6988 allow some entities have control over Power States of other entities,
+   e.g., in Building automation case where a gateway to a building system may have
+   the means to control the Power State of entities in the building that do not have
+   an IP interface.
+
+   In this document, we assume all network devices have IP connectivity in the operator
+   controlled environment. Therefore only an Energy Management System has control over
+   Power States of other entities.
+
+   In addition, it is required that an entity that has its state
+   controlled by the Energy Management System has the means to report the list of
+   these other entities.
+
+#### Control of Power States of Other Entities
+
+   The standard must provide means for an Energy Management System to
+   send Power State control commands to an entity that controls the
+   Power States of entities other than the entity to which the command
+   was sent.
+
+#### Identity of Other Power State Controlled Entities
+
+   The standard must provide means for reporting the identities of the
+   entities for which the reporting entity has the means to control
+   their Power States.  Note that, in some situations, a manual
+   configuration might be required to populate this information.
+
+#### List of All Power State Controlled Entities
+
+   The standard must provide means for an entity to report the list of
+   all entities for which it can control the Power State.
+
+#### List of All Power State Controllers
+
+   The standard must provide means for an entity that receives commands
+   controlling its Power State from other entities to report the list of
+   all those entities.
+
+### Controlling Power Supply
+
+   Some entities may have control of the power supply of other entities,
+   for example, because the other entity is supplied via a Power Outlet
+   of the entity.  For this and similar cases, means are needed to make
+   this control accessible to the Energy Management System.  This need
+   is already addressed by the requirement in Section 6.2.
+
+   In addition, it is required that an entity that has its supply
+   controlled by other entities has the means to report the list of
+   these other entities.  This need is already addressed by requirements
+   in Sections 5.2.3 and 5.2.4.
+
 
 # Requirements extracted from proponents drafts
 
@@ -1203,64 +1276,6 @@ The main elements in the framework are as follows:
 
 (g) Control Energy Saving
 
-# Controlling Other Entities
-
-   This section specifies requirements for controlling Power States and
-   power supply of entities by communicating with other entities that
-   have the means for doing that control.
-
-## Controlling Power States of Other Entities
-
-   RFC6988 allow some entities have control over Power States of other entities,
-   e.g., in Building automation case where a gateway to a building system may have
-   the means to control the Power State of entities in the building that do not have
-   an IP interface.
-
-   In this document, we assume all network devices have IP connectivity in the operator
-   controlled environment. Therefore only an Energy Management System has control over
-   Power States of other entities.
-
-   In addition, it is required that an entity that has its state
-   controlled by the Energy Management System has the means to report the list of
-   these other entities.
-
-### Control of Power States of Other Entities
-
-   The standard must provide means for an Energy Management System to
-   send Power State control commands to an entity that controls the
-   Power States of entities other than the entity to which the command
-   was sent.
-
-### Identity of Other Power State Controlled Entities
-
-   The standard must provide means for reporting the identities of the
-   entities for which the reporting entity has the means to control
-   their Power States.  Note that, in some situations, a manual
-   configuration might be required to populate this information.
-
-### List of All Power State Controlled Entities
-
-   The standard must provide means for an entity to report the list of
-   all entities for which it can control the Power State.
-
-### List of All Power State Controllers
-
-   The standard must provide means for an entity that receives commands
-   controlling its Power State from other entities to report the list of
-   all those entities.
-
-## Controlling Power Supply
-
-   Some entities may have control of the power supply of other entities,
-   for example, because the other entity is supplied via a Power Outlet
-   of the entity.  For this and similar cases, means are needed to make
-   this control accessible to the Energy Management System.  This need
-   is already addressed by the requirement in Section 6.2.
-
-   In addition, it is required that an entity that has its supply
-   controlled by other entities has the means to report the list of
-   these other entities.  This need is already addressed by requirements
-   in Sections 5.2.3 and 5.2.4.
 
 # Security Considerations
 
