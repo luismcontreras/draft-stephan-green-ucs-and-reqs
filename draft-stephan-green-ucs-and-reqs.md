@@ -1025,14 +1025,14 @@ The terms below are a sub set of the whole terminology. There are many other dra
   In addition, the standard must provide means to support both local management and
   network wide management based on energy saving functionality.
 
-# Reporting an controlling on Other Entities
+# Management of oultet Entities
 
 As discussed in Section 5, not all energy-related information may be
    available at the entity in question.  Such information may be
    provided by other entities.  This section groups the requirements for the discovery, the reporting and the control
-   of information. 
+   of information.
 
-The intend is to add a table in section 9.
+The intend is to summarize them in a table in section 9.
 
 ## Discovery of Power inlet Entities
 
