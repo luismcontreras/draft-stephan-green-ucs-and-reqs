@@ -1451,31 +1451,31 @@ This appendix should be removed in the next version
 
    The EMAN (Energy MANagement) working group (WG), created in 2010 and now concluded, has produced multiples RFCs
 
-      * {{?RFC7603}}, Energy Management (EMAN) Applicability Statement
+      * RFC7603, Energy Management (EMAN) Applicability Statement
 
-      * {{?RFC7577}}, Definition of Managed Objects for Battery Monitoring
+      * RFC7577, Definition of Managed Objects for Battery Monitoring
 
-      * {{?RFC7460}}, Monitoring and Control MIB for Power and Energy
+      * RFC7460, Monitoring and Control MIB for Power and Energy
 
-      * {{?RFC7461}}, Energy Object Context MIB
+      * RFC7461, Energy Object Context MIB
 
-      * {{?RFC7326}}, Energy Management Framework
+      * RFC7326, Energy Management Framework
 
-      * {{?RFC6988}}, Requirements for Energy Management
+      * RFC6988, Requirements for Energy Management
 
-      * {{?RFC6933}}, Entity MIB (Version 4)
+      * RFC6933, Entity MIB (Version 4)
 
    Note also that some other energy-related MIB modules have been created, but not by the EMAN Working Group
 
-      * {{?RFC3433}}, Entity Sensor MIB module
+      * RFC3433, Entity Sensor MIB module
 
-      * {{?RFC3621}}, Power Ethernet MIB modules
+      * RFC3621, Power Ethernet MIB modules
 
-      * {{?RFC1628}}, UPS Power Monitoring MIB module
+      * RFC1628, UPS Power Monitoring MIB module
 
       * LLDP MIB module and LLDP MED MIB module
 
-   Due to limitations regarding Writeable MIB module, one IESG statement published in 2014 encourages the use the NETCONF/YANG standards for configuration. Based on the YANG modules    developments, three MIB  modules (Entity MIB module, Entity Sensor MIB module, Entity State MIB module) have been converted into the "YANG Data Model for Hardware Management" {{?RFC8348}}.
+   Due to limitations regarding Writeable MIB module, one IESG statement published in 2014 encourages the use the NETCONF/YANG standards for configuration. Based on the YANG modules    developments, three MIB  modules (Entity MIB module, Entity Sensor MIB module, Entity State MIB module) have been converted into the "YANG Data Model for Hardware Management" RFC8348.
 
    However, Power and Energy Monitoring and Control MIB modules has not been converted yet into YANG modules.
 
@@ -1489,7 +1489,7 @@ The following section will delve into the specific details but from a high level
 
 - A focus towards YANG, and not any longer on MIB modules
 
-- As a consequence from the previous point, the ENTITY-MIB v4 {{?RFC6933}} is replaced by the Hardware YANG module RFC8348
+- As a consequence from the previous point, the ENTITY-MIB v4 RFC6933 is replaced by the Hardware YANG module RFC8348
 
 - battery management is removed (as batteries haves some self-optimization features these days)
 
