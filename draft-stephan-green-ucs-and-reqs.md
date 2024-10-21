@@ -103,7 +103,6 @@ The following section will delve into the specific details but from a high level
 
 However, Power and Energy Monitoring and Control MIB modules has not been converted yet into YANG modules.
 
-
 ## Background
 
    With rising energy costs and an increasing awareness of the
