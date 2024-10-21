@@ -5,13 +5,13 @@
 Getting Ready for Energy-Efficient Networking                 E. Stephan
 Internet-Draft                                                    Orange
 Intended status: Informational                                M. Palmero
-Expires: 23 April 2025                               Cisco Systems, Inc.
+Expires: 24 April 2025                               Cisco Systems, Inc.
                                                                B. Claise
                                                                    Q. Wu
                                                                   Huawei
                                                          L. M. Contreras
                                                               Telefonica
-                                                         20 October 2024
+                                                         21 October 2024
 
 
              Requirements for Energy Efficiency Management
@@ -95,7 +95,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 23 April 2025.
+   This Internet-Draft will expire on 24 April 2025.
 
 Copyright Notice
 
@@ -1239,16 +1239,11 @@ Table of Contents
 
 9.  Requirements extracted from proponents drafts
 
-   This section extracts and groups requirements from the revisit of
-   operator's requirements made in the last charter refinement work
-   [charter-refinement] and from the drafts which provided material
-   [GREEN-BOF], [sustainability-insights], [legacy-path] and
-   [rfc6988bis-green] to the green BoF.  The aim is to determine initial
-   sets of requirements actionable at different levels of the framework
-   presented in [charter-refinement].
-
-   The tables below respect the format and the semantic of operators
-   requirements table of [charter-refinement].
+   This section extracts and groups requirements from the documents of
+   the proponents of the GREEN WG creation [GREEN-BOF], [sustainability-
+   insights], [legacy-path] and [rfc6988bis-green].  The aim is to
+   determine initial sets of requirements actionable at different levels
+   of the framework presented below Section 9.5.
 
 9.1.  Operator'requirements from [charter-refinement] document
 
