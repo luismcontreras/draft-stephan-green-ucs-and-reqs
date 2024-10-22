@@ -59,6 +59,11 @@ informative:
     date: 2024-05-10
     target: "https://github.com/marisolpalmero/GREEN-bof"
 
+  GREEN-BOF-REQS:
+    title: "Green BoF requirements collections"
+    date: 2024-09-03
+    target: "https://datatracker.ietf.org/doc/draft-stephan-green-bof-reqs-collections"
+    
 --- abstract
 
 This document delineates the requirements for standards specifications in Energy Efficiency Management, extending the foundational work of RFC6988 and incorporating recent insights from operator requirements and the GREEN BoF discussions. Eleven years after the publication of RFC6988, this document reassesses and updates the requirements to align with contemporary needs.
@@ -67,7 +72,7 @@ The primary objectives of this draft, which are listed in the goals and scope wi
 (1) collecting and updating requirements for the management of energy-efficient networks, and
 (2) defining use cases for managing energy-efficient networks.
 
-This draft merges two drafts: (draft-eman-green-rfc6988bis-01)[https://datatracker.ietf.org/doc/draft-eman-green-rfc6988bis/] and (draft-stephan-green-bof-reqs-collections-02)[https://datatracker.ietf.org/doc/draft-stephan-green-bof-reqs-collections/].
+This draft merges two drafts: (draft-eman-green-rfc6988bis-01)[https://datatracker.ietf.org/doc/draft-eman-green-rfc6988bis/] and [GREEN-BOF-REQS].
 
 Discussion Venues
 
@@ -1295,8 +1300,34 @@ For this use case, the following requirements apply:
 |Control& Mgmt|Advanced sleep mode, needing some sort of low power mode when node is lightly utilized|Dynamic Energy Saving|2|
 |Control& Mgmt|Ability to steer traffic based on power savings|Traffic Engineering|4|
 These requirements are under revision as this is a work in progress.
-## EE management in Incremental deployment of GREEN components
-start with information from external database (& co) ...
+
+# Incremental Application of the GREEN Framework
+
+This section describes an incremental example of usage showing how a product, a service and a network can use the framework in different settings.
+
+Once upon a time there was an very old legacy router named Rusty equipped with outdated ethernet and ugly optical interfaces. Despite his worn-out appearance, Rusty was determined to contribute to the energy efficiency effort. He dreamed of finding a way to optimize his old circuits and help reduce the power consumption of the network he had faithfully served for so many years. Though he was no longer in his prime, Rusty believed that even an old router like him could make a difference in a world striving for sustainability and help reduce the carbon footprint. He is convince that he still had a part to play in making the digital world a greener place.
+
+moving to GREEN energy effiency support: 3 steps (uc) :
+
+- season 1 "baseline" : establishing a reference point of typical energy usage, which is crucial for identifying inefficiencies and measuring improvements over time.
+  At this step the controler use only the (c) part of the framework. It is collected from the datasheet.
+
+By establishing a baseline and using benchmarking, you can determine if your networking equipment is performing normally or if it is "off" from expected performance, guiding you in making necessary improvements.
+
+The initial measurement of your networking equipment's energy efficiency and performance, aka Baselining, needs to be in coordination with the vendor specifications and industry standards to understand what is considered normal or optimal performance.
+example:
+Baseline: Your switches operate at 5 Gbps per watt.
+Benchmarking: Vendor specification is 8 Gbps per watt; industry standard is 10 Gbps per watt.
+Action: Implement energy-saving measures and upgrades.
+Tracking: Measure again to see if efficiency improves towards 8-10 Gbps per watt.
+
+- season 2 "component":  part of its hw or sw migrated to support GREEN framework elements, TODO add refs to [legacy-path] sections.
+
+- season 3 "device controleur"
+
+- season 4 "network level"
+
+
 ## Additional use cases
 To be completed in next versions.
 
@@ -1352,7 +1383,7 @@ To be completed in next versions.
    applies particularly to the control functions described in Sections 6
    and 8.
 
-# Security
+## Other Aspects
 
 Adding new interfaces on devices increase attack surfaces.
 Devices have brief variation of power consumption due their internal works. Reducing the power available may reduce their routing capacity which may reduce network performance and resiliency.
