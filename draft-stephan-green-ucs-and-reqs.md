@@ -1295,8 +1295,11 @@ For this use case, the following requirements apply:
 |Control& Mgmt|Advanced sleep mode, needing some sort of low power mode when node is lightly utilized|Dynamic Energy Saving|2|
 |Control& Mgmt|Ability to steer traffic based on power savings|Traffic Engineering|4|
 These requirements are under revision as this is a work in progress.
+## EE management in Incremental deployment of GREEN components
+start with information from external database (& co) ...
 ## Additional use cases
 To be completed in next versions.
+
 # Security Considerations
 
    Controlling Power State and power supply of entities are considered
