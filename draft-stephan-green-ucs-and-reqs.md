@@ -63,7 +63,7 @@ informative:
     title: "Green BoF requirements collections"
     date: 2024-09-03
     target: "https://datatracker.ietf.org/doc/draft-stephan-green-bof-reqs-collections"
-    
+
 --- abstract
 
 This document delineates the requirements for standards specifications in Energy Efficiency Management, extending the foundational work of RFC6988 and incorporating recent insights from operator requirements and the GREEN BoF discussions. Eleven years after the publication of RFC6988, this document reassesses and updates the requirements to align with contemporary needs.
