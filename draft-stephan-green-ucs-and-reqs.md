@@ -59,10 +59,26 @@ informative:
     date: 2024-05-10
     target: "https://github.com/marisolpalmero/GREEN-bof"
 
-  GREEN-BOF-REQS:
+  green-bof-reqs:
     title: "Green BoF requirements collections"
     date: 2024-09-03
     target: "https://datatracker.ietf.org/doc/draft-stephan-green-bof-reqs-collections"
+
+
+  rfc6988bis-green:
+    title: "Requirements for Energy Efficiency Management, 11 years after the EMAN RFC6988"
+    date: 2024-07-21
+    target: "https://datatracker.ietf.org/doc/draft-eman-green-rfc6988bis"
+
+  sustainability-insights:
+    title: "Sustainability Insights"
+    date: 2024-05-07
+    target: "https://datatracker.ietf.org/doc/html/draft-almprs-sustainability-insights"
+
+  legacy-path:
+    title: "Requirements for Energy Efficiency Management"
+    date: 2024-07-21
+    target: "https://datatracker.ietf.org/doc/draft-stephan-legacy-path-eco-design"
 
 --- abstract
 
@@ -72,7 +88,7 @@ The primary objectives of this draft, which are listed in the goals and scope wi
 (1) collecting and updating requirements for the management of energy-efficient networks, and
 (2) defining use cases for managing energy-efficient networks.
 
-This draft merges two drafts: (draft-eman-green-rfc6988bis-01)[https://datatracker.ietf.org/doc/draft-eman-green-rfc6988bis/] and [GREEN-BOF-REQS].
+This draft merges two drafts: [rfc6988bis-green] and [green-bof-reqs].
 
 Discussion Venues
 
@@ -95,7 +111,7 @@ This document does not mandate specific use cases for compliant implementations 
 
 Terms and definitions related to energy efficiency metrics will be discussed in later stages for potential integration.
 
-This draft merges two drafts: (draft-eman-green-rfc6988bis-01)[https://datatracker.ietf.org/doc/draft-eman-green-rfc6988bis/] and (draft-stephan-green-bof-reqs-collections-02)[https://datatracker.ietf.org/doc/draft-stephan-green-bof-reqs-collections/].
+This draft merges two drafts: [rfc6988bis-green] and [green-bof-reqs].
 
 At this step the specifications made by the IETF, aka in WGs like EMAN, on energy managements focus mainly on SMI (aka MIBs) instead of YANG and cover neither the control nor energy efficiency.
 As a consequence, the willing of this document is to resuse pieces of the energy-related requirements of RFC6988 and to map them in a framework of YANG/Netconf for energy efficiency that might reuse "YANG Data Model for Hardware Management" {{?RFC8348}}, a conversion of former Entity MIB module, Entity Sensor MIB module, Entity State MIB modules.
@@ -1180,19 +1196,21 @@ The table below is a copy of the operator'requirements table of [charter-refinem
 |Sustainability & Carbon Emission|Accounting of legacy installed based GHG/energy|Accounting Cost|4|
 |Sustainability & Carbon Emission|Track device/network Energy Consumption Before Operation|Manufacturing, transport(weight, volume, package)|4|
 
-## Requirements extracted from [legacy-path]
+## Requirements extracted from [legacy-path] {#incremental}
+
+TODO: This section might merge with {{incremental-use-case}} secction.
 
 |category|requirements|note|Priority|
 |:----|:----|:----|:----|
-|Inventory Management|component control capacity (aka component max on/off frequency supported)|Per component control| 1 (i)|
+|Inventory Management|component control capacity (aka component max power-on/power-off frequency supported)|Per component control| 1 (i)|
 |Analysis|assess the gains of introducing eco-designed components in a device|Device Level Mgmt| 1 (ii)|
 |Control& Mgmt|comprehensive support of network-wide energy efficiency includes legacy devices|Network Level Mgmt| 1 (iii)|
 
-(i) Avoid control to break the component
+(i) Avoid a power-on/power-off frequency to break component parts (aka laser, power parts, wire connectors ...)
 
 (ii) the gain must be measurable
 
-(iii) network-wide solution must include legacy devices and green-wg ready devices
+(iii) network-wide  energy efficiency solutions must include legacy devices and green-wg ready devices
 
 ## Requirements from [rfc6988bis-green] draft Open Issues
 
@@ -1287,9 +1305,11 @@ The main elements in the framework are as follows:
 # Use Cases
 This section describes a number of relevant use cases with the purpose of elicit requirements for Energy Efficiency Management.
 This is a work in progress and additional use cases will be documented in next versions of this document.
+
 ## Selective reduction of energy consumption in network parts proportional to traffic levels
 Traffic levels in a network follow patterns reflecting the behavior of consumers. Those patterns show periodicity in the terms of the traffic delivered, that can range from daily (from 00:00 to 23:59) to seasonal (e.g., winter to summer), showing peaks and valleys that could be exploited to reduce the consumption of energy in the network proportionally, in case the underlying network elements incorporate such capabilities. The reduction of energy consumption could be performed by leveraging on sleep modes in components up to more extreme actions such as switching off network components or modules. Such decisions are expected to no impact on the service delivered to customers, and could be accompanied by traffic relocation and / or concentration in the network.
 For this use case, the following requirements apply:
+
 |category|requirements|note|Priority|
 |:----|:----|:----|:----|
 |Observability|Component granularity, e.g., per line-card, per-port|Per component measurement|1|
@@ -1299,17 +1319,18 @@ For this use case, the following requirements apply:
 |Control& Mgmt|To have devices with elastic power consumption according to the carried traffic|Dynamic Energy Saving|2|
 |Control& Mgmt|Advanced sleep mode, needing some sort of low power mode when node is lightly utilized|Dynamic Energy Saving|2|
 |Control& Mgmt|Ability to steer traffic based on power savings|Traffic Engineering|4|
+
 These requirements are under revision as this is a work in progress.
 
-# Incremental Application of the GREEN Framework
+## Incremental Application of the GREEN Framework {#incremental-use-case}
 
 This section describes an incremental example of usage showing how a product, a service and a network can use the framework in different settings.
 
 Once upon a time there was an very old legacy router named Rusty equipped with outdated ethernet and ugly optical interfaces. Despite his worn-out appearance, Rusty was determined to contribute to the energy efficiency effort. He dreamed of finding a way to optimize his old circuits and help reduce the power consumption of the network he had faithfully served for so many years. Though he was no longer in his prime, Rusty believed that even an old router like him could make a difference in a world striving for sustainability and help reduce the carbon footprint. He is convince that he still had a part to play in making the digital world a greener place.
 
-moving to GREEN energy effiency support: 3 steps (uc) :
+Device moving gradually to GREEN energy efficiency support:
 
-- season 1 "baseline" : establishing a reference point of typical energy usage, which is crucial for identifying inefficiencies and measuring improvements over time.
+- step 1 "baseline" : establishing a reference point of typical energy usage, which is crucial for identifying inefficiencies and measuring improvements over time.
   At this step the controler use only the (c) part of the framework. It is collected from the datasheet.
 
 By establishing a baseline and using benchmarking, you can determine if your networking equipment is performing normally or if it is "off" from expected performance, guiding you in making necessary improvements.
@@ -1321,12 +1342,21 @@ Benchmarking: Vendor specification is 8 Gbps per watt; industry standard is 10 G
 Action: Implement energy-saving measures and upgrades.
 Tracking: Measure again to see if efficiency improves towards 8-10 Gbps per watt.
 
-- season 2 "component":  part of its hw or sw migrated to support GREEN framework elements, TODO add refs to [legacy-path] sections.
+- step 2 "component":  part of the device hw or sw migrated to support GREEN framework elements, TODO add refs to [legacy-path] sections.
 
-- season 3 "device controleur"
+- step 3 "device controleur"
 
-- season 4 "network level"
+- step 4 "network level"
 
+For this use case, the following requirements apply:
+|category|requirements|note|Priority|
+
+|:----|:----|:----|:----|
+|Discovery|Component granularity, e.g., per line-card, per-port|Per component |1|
+|Observability|Availability of information on the power consumption of the device, without needing instrumentation connected to the infrastructure|Related to connected device case|1|
+|Analysis|Common definition of energy efficiency in network devices/components|Standard metric|1|
+
+These requirements are under revision as this is a work in progress.
 
 ## Additional use cases
 To be completed in next versions.
