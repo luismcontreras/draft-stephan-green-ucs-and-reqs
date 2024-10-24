@@ -1427,6 +1427,10 @@ This document has no IANA actions.
 
 # Open Issues
 
+## Open Issues to be Discussed at IETF121
+
+## Open Issues collected since the BoF
+
    o Do we need to keep a reference to the MIB object entPhysicalUUID (in section 4.4 from ENTITY-MIB v4) in case of legacy device (MIB)?
 
    o The EMAN requirements and EMAN framework had a lot of emphasis on the "Reporting on Other Entities", typically smart PDU or PoE.
