@@ -1423,7 +1423,7 @@ Devices have brief variation of power consumption due their internal works. Redu
 This document has no IANA actions.
 
 # Acknowledgments
-
+The contribution of Luis M. Contreras to this document has been supported by the Smart Networks and Services Joint Undertaking (SNS JU) under the European Union’s Horizon Europe research and innovation projects 6Green (Grant Agreement no. 101096925) and Exigence (Grant Agreement no. 101139120).
 
 # Open Issues
 
