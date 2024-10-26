@@ -80,6 +80,22 @@ informative:
     date: 2024-07-21
     target: "https://datatracker.ietf.org/doc/draft-stephan-legacy-path-eco-design"
 
+  TS23.501
+    title: 3GPP TS 23.501, System architecture for the 5G System (5GS), 17.6.0.
+    date: 2022-09-22
+
+  TS28.554
+    title: 3GPP TS 28.554, Management and orchestration; 5G end to end Key Performance Indicators (KPI), 17.15.0.
+    date: 2024-09-25
+
+  ONF-MW
+    title: ONF TR-532, Microwave Information Model, version 2.0.
+    date: 2024-01-31
+
+  mWT025
+    title: ETSI GR mWT 025, Wireless Backhaul Network and Services Automation: SDN SBI YANG models, V1.1.1.
+    date: 2021-03-31
+
 --- abstract
 
 This document delineates the requirements for standards specifications in Energy Efficiency Management, extending the foundational work of RFC6988 and incorporating recent insights from operator requirements and the GREEN BoF discussions. Eleven years after the publication of RFC6988, this document reassesses and updates the requirements to align with contemporary needs.
@@ -1481,6 +1497,26 @@ This document has no IANA actions.
    o Consideration to include in scope, allocate/compute and report the energy
    spent on behalf of a particular customer/user.
    Open issue, marisolpalmero/GREEN-bof#89
+
+# Other use cases (to be decided if moved to use case section)
+
+## Consideration of other domains for obtention of end-to-end metrics
+
+The technologies under the scope of IETF provide the necessary connectivity to other technological domains. For the obtnetion of metrics end-to-end it would be required to combine or compose the metrics per each of those domains.
+
+An exemplary case is the one of a network slice service. The concept of network slice was initially defined by 3GPP {{TS23.501}}, and it has been further extended to the concerns of IETF {{?RFC9543}}.
+
+In regards energy efficiency, 3GPP defines a number of energy-related key performance indicators (KPI) in {{TS28.554}}, specifically Energy Efficiency (EE) and Energy Consumption (EC) KPIs. There are KPIs particular for a slice supporting a specific kind of service (e.g., Mobile Broadband or MBB), or generic ones, like Generic Network Slice EE or Network Slice EC. Assuming these as the KPIs of interest, the motivation of this use case is the obtention of the equivalent KPIs at IETF level, that is, for the network slice service as defined in {{?RFC9543}}.
+
+Note that according to {{TS28.554}}, the Generic Network Slice EE is the performance of the network slice divided by the Network Slice EC. Same approach can be followed at IETF level. Note that for avoiding double counting the energy at IETF level in the calculation of the end-to-end metric, the 3GPP metric should only consider the efficiency and consumption of the 3GPP-related technologies.
+
+## Dynamic adjustment of network element throughput according to traffic levels in wireless transport networks  
+
+Radio base stations are typically connected to the backbone network by means of fiber or wireless transport (e.g., microwave) technologies. In the specific case of wireless transport, automation frameworks have been defined {{ONF-MW}}{{?RFC8432}}{{mWT025}} for their control and management.
+
+One of the parameters subject of automated control is the power of the radio links. The relevance of that capability is that the power can be adjusted accordingly to the traffic observed. Wireless transport networks are typically planned to support the máximum traffic capacity in their área of aggregation, that is, the traffic peak. With that input, the number of radio links in the network element and the corresponding power per radio link (for supporting a given modulation and link length in the worst weather conditions) are configured. This is done to avoid any kind of traffic loss in the worst operational situation. However, such operational needs are sporadic, giving room for optimization during normal operational circumstances and/or low traffic periods.
+
+Power-related parameters are for instance defined in {{?RFC8561}}. Those power parameters can be dynamically configured to adjust the power to the observed traffic levels with some coarse granularity, but pursuing certain degrees of proportionality.
 
 # References
 
