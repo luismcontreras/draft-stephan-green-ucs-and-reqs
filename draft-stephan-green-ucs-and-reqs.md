@@ -1510,7 +1510,7 @@ In regards energy efficiency, 3GPP defines a number of energy-related key perfor
 
 Note that according to {{TS28.554}}, the Generic Network Slice EE is the performance of the network slice divided by the Network Slice EC. Same approach can be followed at IETF level. Note that for avoiding double counting the energy at IETF level in the calculation of the end-to-end metric, the 3GPP metric should only consider the efficiency and consumption of the 3GPP-related technologies.
 
-## Dynamic adjustment of network element throughput according to traffic levels in wireless transport networks  
+## Dynamic adjustment of network element throughput according to traffic levels in wireless transport networks
 
 Radio base stations are typically connected to the backbone network by means of fiber or wireless transport (e.g., microwave) technologies. In the specific case of wireless transport, automation frameworks have been defined {{ONF-MW}}{{?RFC8432}}{{mWT025}} for their control and management.
 
