@@ -80,19 +80,19 @@ informative:
     date: 2024-07-21
     target: "https://datatracker.ietf.org/doc/draft-stephan-legacy-path-eco-design"
 
-  TS23.501
+  TS23.501:
     title: 3GPP TS 23.501, System architecture for the 5G System (5GS), 17.6.0.
     date: 2022-09-22
 
-  TS28.554
+  TS28.554:
     title: 3GPP TS 28.554, Management and orchestration; 5G end to end Key Performance Indicators (KPI), 17.15.0.
     date: 2024-09-25
 
-  ONF-MW
+  ONF-MW:
     title: ONF TR-532, Microwave Information Model, version 2.0.
     date: 2024-01-31
 
-  mWT025
+  mWT025:
     title: ETSI GR mWT 025, Wireless Backhaul Network and Services Automation: SDN SBI YANG models, V1.1.1.
     date: 2021-03-31
 
